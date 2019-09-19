@@ -1,6 +1,23 @@
 # JS-Tricks
 
+## sumArray
+
+Get the total sum of an array.
+
+### Example:
+``` js
+let exArr = [5, 7, 12, 18];
+sumArray(exArr);
+```
+
+### Result:
+```
+>42
+```
+
 ## groupArray
+
+You can regroup an array into sub-arrays
 
 ### Example:
 ```js
@@ -20,4 +37,24 @@ console.log(newArrayGroups);
     length: 4
     __proto__: Array(0)"
 
+```
+
+## lazySrc
+
+Solution for Shopify's lazyload, replace '{width}' with value from data-widths array
+
+### Example:
+``` js
+let node = $(`<img 
+                class="lazyload" 
+                data-src="//cdn.shopify.com/s/files/path/to/example/{width}x.jpg" 
+                data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]">
+            `); 
+
+lazySrc(node);
+
+```
+### Result:
+```
+> "//cdn.shopify.com/s/files/path/to/example/1080x.jpg"
 ```
