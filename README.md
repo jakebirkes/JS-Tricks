@@ -52,6 +52,7 @@ let node = $(`<img
             `); 
 
 lazySrc(node);
+
 console.log(node.attr('src'));
 
 ```
