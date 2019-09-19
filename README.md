@@ -7,6 +7,7 @@ Get the total sum of an array.
 ### Example:
 ``` js
 let exArr = [5, 7, 12, 18];
+
 sumArray(exArr);
 ```
 
@@ -23,9 +24,10 @@ You can regroup an array into sub-arrays
 ```js
 
 let thisArray = [0, 1, 2, 3, 4, 5, 6, 7];
-let newArrayGroups = thisArray.groupArray(2); //grouping them in pairs
-console.log(newArrayGroups);
 
+let newArrayGroups = thisArray.groupArray(2); //grouping them in pairs
+
+console.log(newArrayGroups);
 ```
 ### Result:
 ```
@@ -36,7 +38,6 @@ console.log(newArrayGroups);
     3: (2) [6, 7]
     length: 4
     __proto__: Array(0)"
-
 ```
 
 ## lazySrc
@@ -54,7 +55,6 @@ let node = $(`<img
 lazySrc(node);
 
 console.log(node.attr('src'));
-
 ```
 ### Result:
 ```
