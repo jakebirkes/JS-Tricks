@@ -12,7 +12,7 @@ sumArray(exArr);
 
 ### Result:
 ```
->42
+> 42
 ```
 
 ## groupArray
