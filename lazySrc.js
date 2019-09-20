@@ -3,19 +3,19 @@
 /* 
 let node = $(`<img 
                 class="lazyload" 
-                data-src="//cdn.shopify.com/s/files/path/to/example/{width}x.jpg" 
+                data-src="//cdn.shopify.com/s/files/path/to/example/{width}px.jpg" 
                 data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]">
             `); 
 */
 
-function lazySrc(obj) {
+function lazySrc(obj, num) {
 
     let dataArray = obj.attr('data-widths') //string percieved as an array
                         .replace('[', '')
                         .replace(']', '')
                         .split(', ');
 
-    let dataSelect = dataArray[3].toString(); // 3 = 1080px, your whatever you want :)
+    let dataSelect = dataArray[num].toString(); // whatever you want from the array! :)
 
     let newSrc = obj.attr('data-src').replace(`{width}`, dataSelect);
     
@@ -23,9 +23,9 @@ function lazySrc(obj) {
 }
 
 /*
-lazySrc(node);
+lazySrc(node, 3); // 3 = 1080
 console.log(node.attr('src'));
 
 Result:
-> "//cdn.shopify.com/s/files/path/to/example/1080x.jpg"
+> "//cdn.shopify.com/s/files/path/to/example/1080px.jpg"
 */
