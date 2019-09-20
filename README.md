@@ -1,6 +1,6 @@
 # JS-Tricks
 
-## sumArray & multArray
+## sumArray
 
 Get the total sum of an array using `sumArray()`
 
