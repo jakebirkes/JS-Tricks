@@ -55,6 +55,42 @@ console.log(newArrayGroups);
     __proto__: Array(0)"
 ```
 
+## digitalRoot
+
+Find the digital root of a non-negative integer by using `digitalRoot()`. The process continues until a single-digit number is reached. 
+
+### Huh? 
+
+For example, let's take the number 6765. If a number is greater than or equal to 10, we split the number by its digits and add them together. We will continue this process until it's less than 10.
+
+```
+Is 6765 greater than or equal to 10? 
+
+Yes, split then add! 
+[6, 7, 6, 5], 6 + 7 + 6 + 5 = 24
+
+Is 24 greater than or equal to 10? 
+
+Yes, split then add!
+[2, 4], 2 + 4 = 6
+
+Is 6 greater than or equal to 10?
+
+No! 
+Therefore, 6 is the Digital Root of 6765!
+```
+### Example:
+```js
+let val = 6765;
+
+digitalRoot(val);
+```
+
+### Result: 
+
+```
+> 6
+```
 ## lazySrc
 
 Solution for Shopify's lazyload> It will create a new `src` attribute by replace '{width}' in `data-src` with a chosen value from `data-widths` array using `lazySrc([obj], [num])`.
