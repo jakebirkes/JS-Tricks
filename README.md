@@ -1,24 +1,39 @@
 # JS-Tricks
 
-## sumArray
+## sumArray & multArray
 
-Get the total sum of an array.
+Get the total sum of an array using `sumArray`
 
 ### Example:
 ``` js
-let exArr = [5, 7, 12, 18];
+let exArr = [1, 2, 3, 4, 5, 6];
 
 sumArray(exArr);
 ```
 
 ### Result:
 ```
-> 42
+> 21
+```
+
+## multArray
+Multiply an array using `multArray()`
+
+### Example:
+``` js
+let exArr = [1, 2, 3, 4, 5, 6];
+
+multArray(exArr);
+```
+
+### Result:
+```
+> 720
 ```
 
 ## groupArray
 
-You can regroup an array into sub-arrays
+You can regroup an array into sub-arrays using `groupArray()`
 
 ### Example:
 ```js
@@ -42,7 +57,7 @@ console.log(newArrayGroups);
 
 ## lazySrc
 
-Solution for Shopify's lazyload, replace '{width}' with value from data-widths array.
+Solution for Shopify's lazyload> It will create a new `src` attribute by replace '{width}' in `data-src` with a chosen value from `data-widths` array using `lazySrc([obj], [num])`.
 
 ### Example:
 ``` js
