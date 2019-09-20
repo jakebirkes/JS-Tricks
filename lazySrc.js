@@ -1,7 +1,7 @@
 //Solution for Shopify's lazyload, replace '{width}' with value from data-widths array
 
 /* 
-let node = $(`<img 
+let target = $(`<img 
                 class="lazyload" 
                 data-src="//cdn.shopify.com/s/files/path/to/example-{width}px.jpg" 
                 data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]">
@@ -23,8 +23,8 @@ function lazySrc(obj, num) {
 }
 
 /*
-lazySrc(node, 3); // 3 = 1080
-console.log(node.attr('src'));
+lazySrc(target, 3); // 3 = 1080
+console.log(target.attr('src'));
 
 Result:
 > "//cdn.shopify.com/s/files/path/to/example-1080px.jpg"
