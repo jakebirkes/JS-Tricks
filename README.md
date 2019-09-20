@@ -61,15 +61,15 @@ Solution for Shopify's lazyload> It will create a new `src` attribute by replace
 
 ### Example:
 ``` js
-let node = $(`<img 
+let target = $(`<img 
                 class="lazyload" 
                 data-src="//cdn.shopify.com/s/files/path/to/example-{width}px.jpg" 
                 data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]">
             `); 
 
-lazySrc(node, 3); // 3 = 1080
+lazySrc(target, 3); // 3 = 1080
 
-console.log(node.attr('src'));
+console.log(target.attr('src'));
 ```
 ### Result:
 ```
