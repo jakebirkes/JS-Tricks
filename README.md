@@ -2,7 +2,7 @@
 
 ## sumArray & multArray
 
-Get the total sum of an array using `sumArray`
+Get the total sum of an array using `sumArray()`
 
 ### Example:
 ``` js
