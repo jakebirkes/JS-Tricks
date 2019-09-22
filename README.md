@@ -66,7 +66,7 @@ You can regroup an array into sub-arrays using `groupArray()`
 
 let thisArray = [0, 1, 2, 3, 4, 5, 6, 7];
 
-thisArray.groupArray(2); //grouping them in pairs
+groupArray(thisArray, 2); //grouping them in pairs
 ```
 ### Result:
 ```
