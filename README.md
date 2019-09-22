@@ -59,7 +59,7 @@ avgArray(exArr);
 `
 ## groupArray
 
-You can regroup an array into sub-arrays using `groupArray()`
+You can regroup an array into sub-arrays using `groupArray(array, groupSize)`
 
 ### Example:
 ```js
