@@ -2,7 +2,9 @@
 
 ## fibSeq
 
-Fibonacci Sequence limited by length using `fibSeq([num])`. (Gotta know this one, of course!)
+Fibonacci Sequence limited by length using `fibSeq([num])`. 
+
+*Gotta know this one, of course!*
 
 ## Example:
 ```js
