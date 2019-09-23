@@ -2,7 +2,7 @@
 
 ## fibSeq
 
-Fibonacci Sequence limited by length using `fibSeq([num])`
+Fibonacci Sequence limited by length using `fibSeq([num])`.
 
 ## Example:
 ```js
@@ -54,9 +54,9 @@ avgArray(exArr);
 ```
 
 ### Result:
-`
+```js
 3.5
-`
+```
 ## groupArray
 
 You can regroup an array into sub-arrays using `groupArray(array, groupSize)`
@@ -69,7 +69,7 @@ let thisArray = [0, 1, 2, 3, 4, 5, 6, 7];
 groupArray(thisArray, 2); //grouping them in pairs
 ```
 ### Result:
-```
+```js
 (4) [Array(2), Array(2), Array(2), Array(2)]
     0: (2) [0, 1]
     1: (2) [2, 3]
