@@ -134,6 +134,6 @@ lazySrc(target, 3); // 3 = 1080
 console.log(target.attr('src'));
 ```
 ### Result:
-`
+```js
 "//cdn.shopify.com/s/files/path/to/example-1080px.jpg"
-`
+```
