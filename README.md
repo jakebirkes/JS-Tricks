@@ -1,8 +1,8 @@
-# JS-Tricks
+# JS Functions
 
 ## fibSeq
 
-Fibonacci Sequence limited by length using `fibSeq([num])`.
+Fibonacci Sequence limited by length using `fibSeq([num])`. (Gotta know this one, of course!)
 
 ## Example:
 ```js
