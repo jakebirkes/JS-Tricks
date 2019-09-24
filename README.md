@@ -2,7 +2,7 @@
 
 ## fibSeq
 
-Fibonacci Sequence limited by length using `fibSeq([num])`. 
+Fibonacci Sequence limited by length using `fibSeq()`. 
 
 *Gotta know this one, of course!*
 
