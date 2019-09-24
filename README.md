@@ -119,7 +119,7 @@ digitalRoot(val);
 ```
 ## lazySrc
 
-Solution for Shopify's lazyload.js will create a new `src` attribute by replace '{width}' in `data-src` with a chosen value from `data-widths` array using `lazySrc([obj], [num])`.
+Solution for Shopify's lazyload.js will create a new `src` attribute by replacing '{width}' in `data-src` with a chosen value from `data-widths` array using `lazySrc([obj], [num])`.
 
 *Currently written in jQuery*
 
