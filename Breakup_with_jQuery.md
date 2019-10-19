@@ -3,8 +3,9 @@
 ## Attributes
 ```js
 //jQuery ~ this does not work!
-$(‘button’).attr(‘disabled, ‘disabled’);
+$(‘button’).attr(‘disabled, ‘true’);
 
 // javascript ~ this does!
-document.getElementsByTagName.disabled = true
+document.getElementsByTagName("target").disabled = true
 ```
+
