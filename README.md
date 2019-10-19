@@ -28,7 +28,7 @@ As you can see we get exactly what we need.
 
 #### Solution: Subtract first
 
-All you need to do is subtract `1` from the string `"11"` and add `1` to retain it's value!
+All you need to do is subtract `1` from the string `"11"` and add `1` to retain its value!
 
 `Result: 11` It's no longer a string!
 
@@ -40,7 +40,7 @@ So...
 = 22
 ```
 
-One thing to note, however, you must subtract by `1` before adding by `1 ` or else you will once again concatenate operands and create another issue rather than solving one.
+One thing to note, however, you must subtract by `1` before adding by `1` or else you will once again concatenate operands and create another issue rather than solving one.
 
 ## Functions
 
