@@ -40,6 +40,21 @@ So...
 
 One thing to note, however, you must subtract by `1` before adding by `1` or else you will once again concatenate operands and create another issue rather than solving one.
 
+## Converting to a String
+
+Because of how JavaScript concatenates an integer with a string, you can utilize this opportunity to quickly convert a integer *as* a string if you needed to.
+
+### Example
+
+`1`
+
+### Solution 
+
+```
+1 + ""
+= "1" // Now it's a string!
+```
+
 ## Decimals
 
 JavaScript isn't good with decimals either. 
