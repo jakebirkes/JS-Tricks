@@ -7,9 +7,9 @@ function storeThisEndpoint(endpoint, name) {
             try {
                 window[name + 'Endpoint'] = parsedJson; // window.exampleEndpoint
                 window[name + 'Endpoint'].src_url = endpoint; // window.exampleEndpoint.src_url
-                return Promise.resolve('fetched ' + name + ' ' + endpoint);
+                return Promise.resolve('stored ' + name + ' ' + endpoint);
             } catch (ex) {
-                return Promise.reject('could not fetch ' + name + ' ' + endpoint);
+                return Promise.reject('could not store ' + name + ' ' + endpoint);
             }
         });
 }
