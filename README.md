@@ -184,18 +184,25 @@ console.log(target.attr('src'));
 "//cdn.shopify.com/s/files/path/to/example-1080px.jpg"
 ```
 
-### storeThisEndpoint
+### fetchEndpoint /fetchMalformedEndpoint
 
 Using fetch() to request the enpoint and storing it with a unique name given along with the url.
 
 #### Example 
 
 ```js
-storeThisEndpoint(location.origin + location.pathname + '.json', 'product');
+fetchEndpoint(location.origin + location.pathname + '.json', 'product');
+fetchMalformedEndpoint(location.origin + location.pathname + '.js', 'collection');
 
-productEndpoint 
+productEndpoint
 > {...}
 
 productEndpoint.src_url
-"https://www.example.com/products/exampleproduct.json"
+> "https://www.example.com/products/exampleproduct.json"
+
+collectionEndpoint
+> {...}
+
+collectionEndpoint.src_url
+> "https://www.example.com/collection/example-products.js"
 ```
