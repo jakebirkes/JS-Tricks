@@ -184,7 +184,7 @@ console.log(target.attr('src'));
 "//cdn.shopify.com/s/files/path/to/example-1080px.jpg"
 ```
 
-### fetchEndpoint /fetchMalformedEndpoint
+### fetchEndpoint / fetchMalformedEndpoint
 
 Using fetch() to request the enpoint and storing it with a unique name given along with the url.
 
