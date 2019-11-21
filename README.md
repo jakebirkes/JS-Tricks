@@ -186,7 +186,7 @@ console.log(target.attr('src'));
 
 ### fetchEndpoint / fetchMalformedEndpoint
 
-Using fetch() to request the enpoint and storing it with a unique name given along with the url.
+Using `fetchEndpoint(endpoint, name)` to request the enpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it. Dealing with Shopify's REST API, fetching JSON isn't always succesful due to how a particular JSON endpoint is structured ~ give `fetchMalformedEndpoint(endpoint, name)` a try if the first one fails. 
 
 #### Example 
 
@@ -205,4 +205,20 @@ collectionEndpoint
 
 collectionEndpoint.src_url
 > "https://www.example.com/collection/example-products.js"
+```
+
+### regexFetchEndpoint
+
+`regexFetchEndpoint(endpoint, name, regex)` is more situational and works much like `fetchEndpoint()` and `fetchMalformedEndpoint()` but will only fetch an endpoint if the page URL depending on a regex match. This is so it's not waiting on a promise that is expected to fail.
+
+```js
+regexFetchEndpoint(location.origin + location.pathname + '.json', 'inventory', /necklace/);
+
+// Example: location.href ~ www.example.com/collections/necklaces
+> fetched inventoryEndpoint
+
+// Example: location.href ~ www.example.com/collections/watches
+> did not fetch inventoryEndpoint
+
+// No errors were made :)
 ```
