@@ -1,4 +1,4 @@
-function maybefetchEndpoint(endpoint, name, regex) {
+function regexfetchEndpoint(endpoint, name, regex) {
 
     if (regex.test(location.href)) {
         return fetch(endpoint).then(resp => resp.json()).then(json => {

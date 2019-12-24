@@ -2,11 +2,11 @@
 
 ## Behavior
 
-This is to understand why JavaScript does JavaScript things.
+This is simply to understand [why JavaScript does JavaScript things](js_behavior.md).
 
 ## Functions
 
-These are a list of functions that are contained in this repo.
+These are a [list of functions](js_functions.md) that are contained in this repo.
 
 - `fibSeq()`
 - `sumArray()`
@@ -21,4 +21,4 @@ These are a list of functions that are contained in this repo.
 
 ## Breakup with jQuery
 
-WIP
+[WIP](Breakup_with_jQuery.md)
