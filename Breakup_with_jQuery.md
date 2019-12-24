@@ -1,11 +1,10 @@
 # Breakup with jQuery
 
-## $()
+## `$()`
 
 A person I spoke with made the argument jQuery is more "convenient" and brought up how to select an element. Well yes, that is more convenient than writing `document.querySelectorAll()` constantly, but do you know what you can do?
 
 ```js
-// select a list of matching elements, context is optional
 function $(selector, context) {
     return (context || document).querySelectorAll(selector);
 }
@@ -20,7 +19,7 @@ There you have it, no plugin neccessary. What's great is that you can still sele
 - `getElementsByClassname()` all elements with the same class name. (Can also select by index.)
 - `getElementById()` select element with id
 
-## .each
+## `.each()`
 
 We have `.forEach()` now. You can start using `Array.from()` to acheive the same thing.
 
