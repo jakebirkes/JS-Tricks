@@ -2,7 +2,7 @@
 
 ## `$('')`
 
-A person I spoke with made the argument jQuery is more "convenient" and brought up how to select an element. Well yes, that is more convenient than writing `document.querySelectorAll()` constantly, but do you know what you can do?
+One conversation I had with someone made the argument jQuery is more "convenient" and brought up how to select an element. Well yes, that is more convenient than writing `document.querySelectorAll()` constantly, but do you know what you can do?
 
 ```js
 function $(selector, context) {
