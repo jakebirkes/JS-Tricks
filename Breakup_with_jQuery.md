@@ -31,10 +31,10 @@ There you have it, no plugin neccessary. What's great is that you can still sele
 
 ## `.each()`
 
-We have `.forEach()` now. You can start using `Array.from()` to acheive the same thing.
+Vanilla js answer: `.forEach()`.
 
 ```js
-Array.from($('div')).forEach((el) => {console.log('hello')}); // done in one line using vanilla js
+$('div').forEach((el) => {console.log('a whole new world')}); // done in one line using vanilla js
 ```
 
 ## Attributes
