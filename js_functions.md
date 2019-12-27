@@ -2,79 +2,91 @@
 
 ## fibSeq()
 
-Fibonacci Sequence limited by length using `fibSeq()`. 
+Fibonacci Sequence limited by length using `fibSeq()`.
 
 ### Example:
 
 ```js
-fibSeq(24); // only taking the first 24
+fibSeq(6); // only taking the first 6
+
+> [1, 1, 2, 3, 5, 8]
 ```
 
-### Result
+## `sumArray`, `subArray`, & `multArray`
+
+To find the sum-total of sub-total of an array 
+
+**Use `.reduce()` instead.**
+
+### `sumArray`
 
 ```js
-(24) [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368]
-
+const sumArray = (acc, cur) => acc + cur;
 ```
 
-## sumArray()
+#### Example
 
-Get the total sum of an array using `sumArray()`
+``` js
+let exArray = [1, 2, 3, 4, 5, 6];
 
-### Example
+exArray.reduce(sumArray);
+> 21 // 1 + 2 + 3 + 4 + 5 + 6
+
+let exArraytwo = [[0, 1], [2, 3], [4, 5]];
+exArrayTwo[2].reduce(sumArray);
+> 9 // 4 + 5
+```
+
+### `subArray`
+
+```js
+const sumArray = (acc, cur) => acc - cur;
+```
+
+#### Example
+
+``` js
+let exArray = [1, 2, 3, 4];
+
+exArray.reduce(sumArray);
+> -8 // 1 - 2 ...
+```
+
+### `multArray`
+
+```js
+const multArray = (acc, cur) => acc * cur;
+```
+
+#### Example
 
 ``` js
 let exArr = [1, 2, 3, 4, 5, 6];
 
-sumArray(exArr);
+exArr.reduce(multArray);
+
+> 720
 ```
 
-### Result
+### Find the average easily with `multArray`
+
+~~Get the average of an array using `avgArray()`.~~
+
+**There is a much simpler way of finding the average of an array. Just use `multArray` as mentioned above and divide by `.length`:**
+
+#### Example
 
 ```js
-21
-```
-
-## multArray()
-
-Multiply an array using `multArray()`
-
-### Example
-
-``` js
-
 let exArr = [1, 2, 3, 4, 5, 6];
 
-multArray(exArr);
+exArr.reduce(multArray) / exArr.length;
+
+> 3.5
 ```
 
-### Result
+## `groupArray()`
 
-```js
-720
-```
-
-## avgArray()
-
-Get the average of an array using `avgArray()`.
-
-### Example
-
-``` js
-let exArr = [1, 2, 3, 4, 5, 6];
-
-avgArray(exArr);
-```
-
-### Result
-
-```js
-3.5
-```
-
-## groupArray()
-
-You can regroup an array into sub-arrays using `groupArray(array, groupSize)`
+You can nest arrays in one by any size you need using `groupArray(array, groupSize)`.
 
 ### Example
 
@@ -82,20 +94,41 @@ You can regroup an array into sub-arrays using `groupArray(array, groupSize)`
 
 let thisArray = [0, 1, 2, 3, 4, 5, 6, 7];
 
-groupArray(thisArray, 2); //grouping them in pairs
+groupArray(thisArray, 2); // grouping them in pairs
 
+> [[0, 1], [2, 3], [4, 5], [6, 7]]
 ```
 
-### Result
+## `flatArray`
+
+If you need to "flatten" these nested arrays back into one array. Use the following:
 
 ```js
-(4) [Array(2), Array(2), Array(2), Array(2)]
-    0: (2) [0, 1]
-    1: (2) [2, 3]
-    2: (2) [4, 5]
-    3: (2) [6, 7]
-    length: 4
-    __proto__: Array(0)"
+const flatArray = (acc, it) => [...acc, ...it];
+```
+
+### Example
+
+```js
+// thisArray = [[0, 1], [2, 3], [4, 5], [6, 7]];
+
+thisArray.reduce(flatArray);
+
+> [0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+### `.flat()` (Potentailly better alternative)
+
+This is something new to me that is similar to `.reduce(flatArray)` except you can go by a specified depth.
+
+You can find more details on this on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+
+```js
+// thisArray = [[0, 1], [2, 3], [4, 5], [6, 7]];
+
+thisArray.flat(); // default depth = 1
+
+> [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
 ## digitalRoot()

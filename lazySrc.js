@@ -1,4 +1,5 @@
-//Solution for Shopify's lazyload, replace '{width}' with value from data-widths array
+// Solution for Shopify's lazyload, replace '{width}' with value from data-widths array
+// purpose to eliminate the use of another plugin
 
 /* 
 let target = $(`<img 

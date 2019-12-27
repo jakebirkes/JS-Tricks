@@ -66,7 +66,8 @@ Because of how JavaScript concatenates an integer with a string, you can utilize
 
 ```js
 1 + ""
-= "1" // Now it's a string!
+
+"1" // Now it's a string!
 ```
 
 ## Decimals
@@ -86,5 +87,6 @@ Convert the number to a whole number and convert it back to its true output.
 
 ```js
 150.9 * 100 * 6 /100
-= 905.4
+
+905.4 // result
 ```

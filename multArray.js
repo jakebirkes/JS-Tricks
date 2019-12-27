@@ -1,5 +1,6 @@
-// let exArr = [1, 2, 3, 4, 5, 6];
+const multArray = (acc, cur) => acc * cur;
 
+/* OBSOLETE
 function multArray(arr) {
     var s = 1;
     for (var i = 0; i < arr.length; i++) {
@@ -7,11 +8,4 @@ function multArray(arr) {
     }
     return s;
   }
-
-// sumArray(exArr);
-  
-/* 
-
-> 720
-
 */
