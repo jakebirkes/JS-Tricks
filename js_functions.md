@@ -196,7 +196,9 @@ console.log(target.attr('src'));
 
 Using `fetchEndpoint(endpoint, name)` to request the enpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it. Dealing with Shopify's REST API, fetching JSON isn't always succesful due to how a particular JSON endpoint is structured ~ give `fetchMalformedEndpoint(endpoint, name)` a try if the first one fails.
 
-This also stored the endpoint url as nameEndpoint.src_url so you can quickly associate where this enpoint was taken from.
+This also stored the endpoint url as `nameEndpoint.src_url` so you can quickly associate where this endpoint was fetched from. This stored url remains outside of the fetched endpoint as well.
+
+*In the function, you will see this stored in the `window`. If you would like to have all data bundled together as one object, I would recommend adding in something like `window.siteData`.*
 
 ### Example
 
