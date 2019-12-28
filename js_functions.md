@@ -14,9 +14,7 @@ fibSeq(6); // only taking the first 6
 
 ## `sumArray`, `subArray`, & `multArray`
 
-To find the sum-total of sub-total of an array 
-
-**Use `.reduce()` instead.**
+To find the sum-total of sub-total of an array, as well as muliplying all items of array and finding the average. We do this by making use of `.reduce()` and the arrow `=>` function. You'll see it's the same basic line with different operators each corresponding to the variable name.
 
 ### `sumArray`
 
@@ -40,7 +38,7 @@ exArrayTwo[2].reduce(sumArray);
 ### `subArray`
 
 ```js
-const sumArray = (acc, cur) => acc - cur;
+const subArray = (acc, cur) => acc - cur;
 ```
 
 #### Example
@@ -48,7 +46,7 @@ const sumArray = (acc, cur) => acc - cur;
 ``` js
 let exArray = [1, 2, 3, 4];
 
-exArray.reduce(sumArray);
+exArray.reduce(subArray);
 > -8 // 1 - 2 ...
 ```
 
