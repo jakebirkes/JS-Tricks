@@ -172,7 +172,7 @@ This will highlight with neon green in the console. Works either as `console.log
 
 ### Example
 
-![traceExample](img\traceExample.png)
+![traceExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/traceExample.png?raw=true)
 
 ## `stripDuplicateId()`
 
