@@ -172,6 +172,10 @@ This will highlight with neon green in the console. Works either as `console.log
 
 ### Example
 
+```js
+trace("console.log example");
+trace("console.trace example", 1); // random value that is NOT undefined
+```
 ![traceExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/traceExample.png?raw=true)
 
 ## `stripDuplicateId()`
