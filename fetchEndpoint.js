@@ -1,11 +1,9 @@
-function fetchEndpoint(endpoint, name) {
-
-    return fetch(endpoint).then(resp => resp.json()).then(json => {
+async function fetchEndPoint(url, name) {
+    await fetch(url).then(resp => resp.json()).then(json => {
         window[name + 'Endpoint'] = json;
-        window[name + 'Endpoint'].src_url = endpoint;
+        window[name + 'Endpoint'].src_url = url;
     }).catch(console.error);
-    
-};
+}
 
 /*
 fetchEndpoint(location.origin + location.pathname + '.json', 'product');
