@@ -9,18 +9,16 @@ let target = $(`<img
             `); 
 */
 
-function lazySrc(obj, num) {
-
-    let dataArray = obj.attr('data-widths') //string percieved as an array
+function lazySrc(target, i) {
+    let dataArray = target.attr('data-widths') //string percieved as an array
                         .replace('[', '')
                         .replace(']', '')
                         .split(', ');
 
-    let dataSelect = dataArray[num].toString(); // whatever you want from the array! :)
-
-    let newSrc = obj.attr('data-src').replace(`{width}`, dataSelect);
+    let dataSelect = dataArray[i].toString(); // whatever you want from the array! :)
+    let newSrc = target.attr('data-src').replace(`{width}`, dataSelect);
     
-    obj.attr('src', newSrc);
+    target.attr('src', newSrc);
 }
 
 /*

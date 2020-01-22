@@ -222,25 +222,21 @@ killDuplicates(arr);
 
 ## `lazySrc()`
 
-Solution for Shopify's lazyload.js will create a new `src` attribute by replacing '{width}' in `data-src` with a chosen value from `data-widths` array using `lazySrc([obj], [num])`.
+Solution for blocking Shopify's lazyload.js to manulaly set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
 
 *Written in jQuery*
 
 ### Example
 
 ``` js
-let target = $(`<img
-                class="lazyload"
-                data-src="//cdn.shopify.com/s/files/path/to/example-{width}px.jpg"
-                data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]">
-            `);
-
-lazySrc(target, 3); // 3 = 1080
-
-console.log(target.attr('src'));
+lazySrc($("img.lazyload"), 3); // 3 = 1080
 ```
 
-### Result
+#### Before
+
+```js
+"//cdn.shopify.com/s/files/path/to/example-{width}x.jpg"
+```
 
 ```js
 "//cdn.shopify.com/s/files/path/to/example-1080px.jpg"
