@@ -9,15 +9,17 @@ This is simply to understand [why JavaScript does JavaScript things](js_behavior
 These are a [list of functions](js_functions.md) that are contained in this repo.
 
 - `fibSeq()`
-- ~~`sumArray()`~~ `.reduce(sumArray)`
-- `multArray()`
-- `avgArray()`
-- `groupArray()`
-- `digitalRoot()`
-- `lazySrc()`
-- `fetchEndpoint()`
-- `fetchMalformedEndpoint()`
-- `regexFetchEndpoint()`
+- `sumArray`
+- `subArray`
+- `multArray`
+- `flatArray`
+- `avgArray`
+- `groupArray`
+- `digitalRoot`
+- `trace`
+- `lazySrc`
+- `storeEndpoint`
+- `regexStoreEndpoint`
 
 ## Breakup with jQuery
 
