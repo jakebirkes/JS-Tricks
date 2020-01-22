@@ -201,26 +201,33 @@ let arr = [
 killDuplicates(arr);
 ```
 
-## `lazySrc`
+## `lzySrc`
 
 Solution for blocking Shopify's lazyload.js to manulaly set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
 
-*Written in jQuery*
-
 ### Example
-
-``` js
-lazySrc($("img.lazyload"), 3); // 3 = 1080
-```
 
 #### Before
 
-```js
-"//cdn.shopify.com/s/files/path/to/example-{width}x.jpg"
+Check to see what is available in the `data-widths` attribute.
+
+``` js
+document.querySelectorAll('img.lazyload')[0].getAttribute('data-widths')
+> "[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]" // string precieved as an array
+
+document.querySelectorAll('img.lazyload')[0].src
+> "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_300x300.jpg?v=1553094531"
 ```
 
+#### After
+
+Target all `img` tags with the `lazyload` class and select a width from the array.
+
 ```js
-"//cdn.shopify.com/s/files/path/to/example-1080px.jpg"
+lzySrc('img.lazyload', 3); // 3 = fourth from data-widths: 900
+
+document.querySelectorAll('img.lazyload')[0].src
+> "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_900x.jpg?v=1553094531"
 ```
 
 ## `storeEndpoint`

@@ -17,7 +17,7 @@ These are a [list of functions](js_functions.md) that are contained in this repo
 - `groupArray`
 - `digitalRoot`
 - `trace`
-- `lazySrc`
+- `lzySrc`
 - `storeEndpoint`
 - `regexStoreEndpoint`
 
