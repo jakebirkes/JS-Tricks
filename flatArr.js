@@ -1,0 +1,1 @@
+var flatArr = (acc, it) => [...acc, ...it];

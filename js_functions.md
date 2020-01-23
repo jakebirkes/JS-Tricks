@@ -1,6 +1,6 @@
 # Functions
 
-## `fibSeq`
+## `fibSeq(length)`
 
 Fibonacci Sequence limited by length using `fibSeq()`.
 
@@ -12,14 +12,14 @@ fibSeq(6); // only taking the first 6
 > [1, 1, 2, 3, 5, 8]
 ```
 
-## `sumArray`, `subArray`, & `multArray`
+## `sumArr`, `subArr`, & `multArr`
 
 To find the sum-total of sub-total of an array, as well as muliplying all items of array and finding the average. We do this by making use of `.reduce()` and the arrow `=>` function. You'll see it's the same basic line with different operators each corresponding to the variable name.
 
-### `sumArray`
+### `sumArr`
 
 ```js
-const sumArray = (acc, cur) => acc + cur;
+var sumArr = (acc, cur) => acc + cur;
 ```
 
 #### Example
@@ -27,18 +27,18 @@ const sumArray = (acc, cur) => acc + cur;
 ``` js
 let exArray = [1, 2, 3, 4, 5, 6];
 
-exArray.reduce(sumArray);
+exArray.reduce(sumArr);
 > 21 // 1 + 2 + 3 + 4 + 5 + 6
 
 let exArraytwo = [[0, 1], [2, 3], [4, 5]];
-exArrayTwo[2].reduce(sumArray);
+exArrayTwo[2].reduce(sumArr);
 > 9 // 4 + 5
 ```
 
-### `subArray`
+### `subArr`
 
 ```js
-const subArray = (acc, cur) => acc - cur;
+var subArr = (acc, cur) => acc - cur;
 ```
 
 #### Example
@@ -46,14 +46,14 @@ const subArray = (acc, cur) => acc - cur;
 ``` js
 let exArray = [1, 2, 3, 4];
 
-exArray.reduce(subArray);
+exArray.reduce(subArr);
 > -8 // 1 - 2 ...
 ```
 
-### `multArray`
+### `multArr`
 
 ```js
-const multArray = (acc, cur) => acc * cur;
+var multArr = (acc, cur) => acc * cur;
 ```
 
 #### Example
@@ -61,30 +61,30 @@ const multArray = (acc, cur) => acc * cur;
 ``` js
 let exArr = [1, 2, 3, 4, 5, 6];
 
-exArr.reduce(multArray);
+exArr.reduce(multArr);
 
 > 720
 ```
 
-### Find the average easily with `multArray`
+### Find the average easily with `multArr`
 
-~~Get the average of an array using `avgArray()`.~~
+~~Get the average of an array using `avgArr()`.~~
 
-**There is a much simpler way of finding the average of an array. Just use `multArray` as mentioned above and divide by `.length`:**
+**There is a much simpler way of finding the average of an array. Just use `multArr` as mentioned above and divide by `.length`:**
 
 #### Example
 
 ```js
 let exArr = [1, 2, 3, 4, 5, 6];
 
-exArr.reduce(multArray) / exArr.length;
+exArr.reduce(multArr) / exArr.length;
 
 > 3.5
 ```
 
-## `groupArray`
+## `partition(arr, length)`
 
-You can nest arrays in one by any size you need using `groupArray(array, length)`.
+You can nest arrays in one by any size you need using `partition(arr, length)`.
 
 ### Example
 
@@ -92,17 +92,17 @@ You can nest arrays in one by any size you need using `groupArray(array, length)
 
 let thisArray = [0, 1, 2, 3, 4, 5, 6, 7];
 
-groupArray(thisArray, 2); // grouping them in pairs
+partition(thisArray, 2); // grouping them in pairs
 
 > [[0, 1], [2, 3], [4, 5], [6, 7]]
 ```
 
-## `flatArray`
+## `flatArr`
 
 If you need to "flatten" these nested arrays back into one array. Use the following:
 
 ```js
-const flatArray = (acc, it) => [...acc, ...it];
+var flatArr = (acc, it) => [...acc, ...it];
 ```
 
 ### Example
@@ -110,14 +110,14 @@ const flatArray = (acc, it) => [...acc, ...it];
 ```js
 // thisArray = [[0, 1], [2, 3], [4, 5], [6, 7]];
 
-thisArray.reduce(flatArray);
+thisArray.reduce(flatArr);
 
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-### `.flat()` (Potentailly better alternative)
+### `.flat()` *A potentailly better alternative!*
 
-This is something new to me that is similar to `.reduce(flatArray)` except you can go by a specified depth.
+This is something new to me that is similar to `.reduce(flatArr)` except you can go by a specified depth.
 
 You can find more details on this on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
 
@@ -129,16 +129,16 @@ thisArray.flat(); // default depth = 1
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-## `digitalRoot`
+## `digRoot(num)`
 
-Find the digital root of a non-negative integer by using `digitalRoot`. The process continues until a single-digit number is reached.
+Find the digital root of a non-negative integer by using `digRoot`. The process continues until a single-digit number is reached.
 
 ### Example
 
 ```js
 let val = 6765;
 
-digitalRoot(val);
+digRoot(val);
 ```
 
 ### Result
@@ -147,7 +147,7 @@ digitalRoot(val);
 6
 ```
 
-## `trace()`
+## `trace(string, random)`
 
 This will highlight with neon green in the console. Works either as `console.log` or `console.trace`.
 
@@ -159,13 +159,13 @@ trace("console.trace example", 1); // random value that is NOT undefined
 ```
 ![traceExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/traceExample.png?raw=true)
 
-## `stripDuplicateId`
+## `stripDuplicateId()`
 
 *Written in jQuery*
 
 If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function.
 
-## `killDuplicateText`
+## `killDuplicateText(arr)`
 
 *Written in jQuery*
 
@@ -183,7 +183,7 @@ let arr = [
 killDuplicateText(arr);
 ```
 
-## `killDuplicates`
+## `killDuplicates(arr)`
 
 *Written in jQuery*
 
@@ -201,7 +201,7 @@ let arr = [
 killDuplicates(arr);
 ```
 
-## `lzySrc`
+## `lzySrc(selector, dataWidth)`
 
 Solution for blocking Shopify's lazyload.js to manulaly set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
 
@@ -230,7 +230,7 @@ document.querySelectorAll('img.lazyload')[0].src
 > "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_900x.jpg?v=1553094531"
 ```
 
-## `storeEndpoint`
+## `storeEndpoint(url, name)`
 
 Using `storeEndpoint(url, name)` to request the enpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
 
@@ -250,7 +250,7 @@ productEndpoint.src_url
 > "https://www.example.com/products/exampleproduct.json"
 ```
 
-## `regexStoreEndpoint`
+## `regexStoreEndpoint(url, name, regex)`
 
 `regexStoreEndpoint(url, name, regex)` is more situational and works much like `storeEndpoint` but will only fetch an endpoint if the page URL depending on a regex match. This is so it's not waiting on a promise that is expected to fail.
 
