@@ -159,13 +159,13 @@ trace("console.trace example", 1); // random value that is NOT undefined
 ```
 ![traceExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/traceExample.png?raw=true)
 
-## `stripDuplicateId()`
+## `stripDuplicateId`
 
 *Written in jQuery*
 
 If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function.
 
-## `killDuplicateText()`
+## `killDuplicateText`
 
 *Written in jQuery*
 
@@ -183,7 +183,7 @@ let arr = [
 killDuplicateText(arr);
 ```
 
-## `killDuplicates()`
+## `killDuplicates`
 
 *Written in jQuery*
 

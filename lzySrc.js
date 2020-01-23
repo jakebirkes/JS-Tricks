@@ -7,8 +7,8 @@ function lzySrc(selector, dataWidth) {
 
         let dataSelected = dataArr[dataWidth].toString(); // selecting size
         let newSrc = el.getAttribute('data-src') // creating valid src string
-            .replace(`{width}`, dataSelected); 
-        
+            .replace(`{width}`, dataSelected);
+
         el.src = newSrc;
     });
 }

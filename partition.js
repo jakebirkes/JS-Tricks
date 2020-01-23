@@ -1,8 +1,7 @@
-//this allows to group the array by any number we wish
-function groupArray (array, groupSize) {
+function partition (arr, length) {
   return [].concat.apply([],
-      array.map(function (elem, i) {
-          return i % groupSize ? [] : [array.slice(i, i + groupSize)];
+      arr.map(function (elem, i) {
+          return i % length ? [] : [arr.slice(i, i + length)];
       })
   );
 }

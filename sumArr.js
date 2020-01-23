@@ -1,8 +1,4 @@
-const sumArray = (acc, cur) => acc + cur;
-
-// exArray = [1, 2, 3, 4, 5, 6];
-// exArray.reduce(sumArray);
-// > 21
+var sumArr = (acc, cur) => acc + cur;
 
 /* OBSOLETE
 function sumArray(arr) {

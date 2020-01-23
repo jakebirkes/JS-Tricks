@@ -1,4 +1,4 @@
-const multArray = (acc, cur) => acc * cur;
+var multArr = (acc, cur) => acc * cur;
 
 /* OBSOLETE
 function multArray(arr) {
