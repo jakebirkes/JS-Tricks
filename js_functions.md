@@ -1,8 +1,8 @@
 # Functions
 
-## `fibSeq(length)`
+## `fibSeq()`
 
-Fibonacci Sequence limited by length using `fibSeq()`.
+Fibonacci Sequence limited by length using `fibSeq(length)`.
 
 ### Example:
 
@@ -82,7 +82,7 @@ exArr.reduce(multArr) / exArr.length;
 > 3.5
 ```
 
-## `partition(arr, length)`
+## `partition()`
 
 You can nest arrays in one by any size you need using `partition(arr, length)`.
 
@@ -115,7 +115,9 @@ thisArray.reduce(flatArr);
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-### `.flat()` *A potentailly better alternative!*
+### `.flat()` 
+
+*A potentailly better alternative!*
 
 This is something new to me that is similar to `.reduce(flatArr)` except you can go by a specified depth.
 
@@ -129,9 +131,9 @@ thisArray.flat(); // default depth = 1
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-## `digRoot(num)`
+## `digRoot`
 
-Find the digital root of a non-negative integer by using `digRoot`. The process continues until a single-digit number is reached.
+Find the digital root of a non-negative integer by using `digRoot(num)`. The process continues until a single-digit number is reached.
 
 ### Example
 
@@ -147,7 +149,9 @@ digRoot(val);
 6
 ```
 
-## `trace(string, random)`
+## `trace()`
+
+`trace(output, random)` or `trace(output)`
 
 This will highlight with neon green in the console. Works either as `console.log` or `console.trace`.
 
@@ -165,7 +169,9 @@ trace("console.trace example", 1); // random value that is NOT undefined
 
 If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function.
 
-## `killDuplicateText(arr)`
+## `killDuplicateText()`
+
+`killDuplicateText(arr)`
 
 *Written in jQuery*
 
@@ -183,11 +189,13 @@ let arr = [
 killDuplicateText(arr);
 ```
 
-## `killDuplicates(arr)`
+## `killDuplicates()`
+
+`killDuplicates(arr)`
 
 *Written in jQuery*
 
-For obvious duplicates that need to be removed. This will remove all except for the first element. Uses an array of strings like `killDuplicateText()`. The difference being it will remove elements without checking anything first.
+For obvious duplicates that need to be removed. This will remove all except for the first element. Uses an array of strings like `killDuplicateText(arr)`. The difference being it will remove elements without checking anything first.
 
 ### Example
 
@@ -201,7 +209,9 @@ let arr = [
 killDuplicates(arr);
 ```
 
-## `lzySrc(selector, dataWidth)`
+## `lzySrc()`
+
+`lzySrc(selector, dataWidth)`
 
 Solution for blocking Shopify's lazyload.js to manulaly set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
 
@@ -230,7 +240,7 @@ document.querySelectorAll('img.lazyload')[0].src
 > "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_900x.jpg?v=1553094531"
 ```
 
-## `storeEndpoint(url, name)`
+## `storeEndpoint()`
 
 Using `storeEndpoint(url, name)` to request the enpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
 
@@ -250,7 +260,7 @@ productEndpoint.src_url
 > "https://www.example.com/products/exampleproduct.json"
 ```
 
-## `regexStoreEndpoint(url, name, regex)`
+## `regexStoreEndpoint()`
 
 `regexStoreEndpoint(url, name, regex)` is more situational and works much like `storeEndpoint` but will only fetch an endpoint if the page URL depending on a regex match. This is so it's not waiting on a promise that is expected to fail.
 

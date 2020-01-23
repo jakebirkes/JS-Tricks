@@ -1,7 +1,7 @@
-function trace(string, random) {
+function trace(output, random) {
     if (random !== undefined) {
-        console.trace("%c" + string, "color:#00FF7F");
+        console.trace("%c" + output, "color:#00FF7F");
     } else {
-        console.log("%c" + string, "color:#00FF7F");
+        console.log("%c" + output, "color:#00FF7F");
     }
 }
