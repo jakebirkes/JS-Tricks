@@ -268,10 +268,10 @@ productEndpoint.src_url
 regexStoreEndpoint(location.origin + location.pathname + '.json', 'inventory', /necklace/);
 
 // Example: location.href ~ www.example.com/collections/necklaces
-> fetched inventoryEndpoint
+> "regexStoreEndpoint(): url successfully matched /necklace/ & fetched inventoryEndpoint"
 
 // Example: location.href ~ www.example.com/collections/watches
-> did not fetch inventoryEndpoint
+> "regexStoreEndpoint(): url did not match /necklace/"
 
 // No errors were made :)
 ```
