@@ -213,7 +213,7 @@ killDuplicates(arr);
 
 `lzySrc(selector, dataWidth)`
 
-Solution for blocking Shopify's lazyload.js to manulaly set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
+Solution for blocking Shopify's lazyload.js to manually set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
 
 ### Example
 
