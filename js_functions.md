@@ -182,7 +182,7 @@ let arr = [
     'p.specifications'
     ];
 
-killDuplicateText(arr);
+killDuplicateContent(arr);
 ```
 
 ## `killDuplicates()`
