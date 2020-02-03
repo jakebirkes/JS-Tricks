@@ -223,7 +223,7 @@ Check to see what is available in the `data-widths` attribute.
 
 ``` js
 document.querySelectorAll('img.lazyload')[0].getAttribute('data-widths')
-> "[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]" // string precieved as an array
+> "[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]" // array as a string
 
 document.querySelectorAll('img.lazyload')[0].src
 > "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_300x300.jpg?v=1553094531"
