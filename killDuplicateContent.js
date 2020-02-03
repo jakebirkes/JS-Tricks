@@ -1,5 +1,5 @@
 // *Written in jQuery*
-function killDuplicateText(arr) {
+function killDuplicateContent(arr) {
     window.removedContent = [];
     arr.forEach(function (el) {
         if ($(el)[0].textContent === $(el)[i].textContent) {
@@ -8,7 +8,7 @@ function killDuplicateText(arr) {
         }
     });
     if (window.removedContent.length > 0) { 
-        console.log("window.killDuplicateContent() removed the following duplicate elements:");
-        console.log(window.removedContent);
+        console.log("killDuplicateContent() removed the following duplicate elements:",
+            "\n",window.removedContent);
     }
 }

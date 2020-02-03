@@ -149,33 +149,29 @@ digRoot(val);
 6
 ```
 
-## `trace()`
+## `highlight()`
 
-`trace(output, random)` or `trace(output)`
+`highlight(msg, clr)` or `highlight(msg)`
 
-This will highlight with neon green in the console. Works either as `console.log` or `console.trace`.
+This will highlight with neon green in the console. Or if you want a different color, simply add a rgb or hex value.
 
 ### Example
 
-```js
-trace("console.log example");
-trace("console.trace example", 1); // random value that is NOT undefined
-```
-![traceExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/traceExample.png?raw=true)
+![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/highlightExample.png?raw=true)
 
 ## `stripDuplicateId()`
 
 *Written in jQuery*
 
-If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function.
+If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any duplicate id that does exist, its name will be stored in an array called `window.removedIDs`.
 
-## `killDuplicateText()`
+## `killDuplicateContent()`
 
-`killDuplicateText(arr)`
+`killDuplicateContent(arr)`
 
 *Written in jQuery*
 
-This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute.
+This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute. Any duplicate content that does exist, the target name will be stored in an array called `window.removedContent`.
 
 ### Example
 
@@ -195,7 +191,7 @@ killDuplicateText(arr);
 
 *Written in jQuery*
 
-For obvious duplicates that need to be removed. This will remove all except for the first element. Uses an array of strings like `killDuplicateText(arr)`. The difference being it will remove elements without checking anything first.
+For obvious duplicates that need to be removed. This will remove all except for the first element. Uses an array of strings like `killDuplicateText(arr)`. The difference being it will remove elements without checking anything first. Any duplicates that does exist, the target name will be stored in an array called `window.removedDuplicates`.
 
 ### Example
 

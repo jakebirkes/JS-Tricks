@@ -8,7 +8,7 @@ function killDuplicates(arr) {
         }
     });
     if (window.removedDuplicates.length > 0) {
-        console.log("window.killDuplicates() removed the following duplicate elements:");
-        console.log(window.removedDuplicates);
+        console.log("killDuplicates() removed the following duplicate elements:",
+        "\n",window.removedDuplicates);
     }
 }

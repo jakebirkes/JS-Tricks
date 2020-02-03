@@ -9,7 +9,7 @@ function stripDuplicateId() {
         }
     });
     if (window.removedIDs.length > 0) { 
-        console.log("window.stripDuplicateId() stripped the following duplicate ids:");
-        console.log(window.removedIDs);
+        console.log("stripDuplicateId() stripped the following duplicate ids:",
+            "\n",window.removedIDs);
     }
 }
