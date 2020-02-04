@@ -33,14 +33,14 @@ These are a [list of functions](js_functions.md) that are contained in this repo
 - [`regexStoreEndpoint`](js_functions.md#regexstoreendpoint)
     - will fetch and store json data only if `location.href` matches regex.
 - [`ampCSSBudget`](js_functions.md#ampcssbudget)
-    - use this to stay on top of your CSS while building in [AMP⚡](https://amp.dev/)
+    - to stay on top of CSS while building in [AMP⚡](https://amp.dev/)
 
 The following are currently written in jQuery.
 
 - [`stripDuplicateId`](js_functions.md#stripDuplicateId)
     - checks if elements have the same id and will remove all but the first id, but will leave elements alone.
 - [`killDuplicates`](js_functions.md#killDuplicates)
-    - to remove obvious elements that are duplicates. 
+    - to remove obvious elements that are duplicates.
 - [`killDuplicateText`](js_functions.md#lzysrc)
     - removes duplicate elements that have repetitive text content.
 

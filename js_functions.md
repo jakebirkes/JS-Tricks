@@ -165,6 +165,12 @@ This will highlight with neon green in the console. Or if you want a different c
 
 If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any duplicate id that does exist, its name will be stored in an array called `window.removedIDs`.
 
+```js
+stripDuplicateId();
+> "stripDuplicateId() stripped the following duplicate ids:",
+    ["#fetured-section","#productCard"] // fake examples...
+```
+
 ## `killDuplicateContent()`
 
 `killDuplicateContent(arr)`
@@ -183,6 +189,8 @@ let arr = [
     ];
 
 killDuplicateContent(arr);
+> "killDuplicateContent() removed the following duplicate elements:",
+    ["div.description", "span.product-price", "p.specifications"]
 ```
 
 ## `killDuplicates()`
@@ -203,6 +211,9 @@ let arr = [
     ];
 
 killDuplicates(arr);
+
+> "killDuplicates() removed the following duplicate elements:",
+    ["h1", "form.subcribe", "nav"]
 ```
 
 ## `lzySrc()`
