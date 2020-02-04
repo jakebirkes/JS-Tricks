@@ -14,7 +14,7 @@ fibSeq(6); // only taking the first 6
 
 ## `sumArr`, `subArr`, & `multArr`
 
-To find the sum-total of sub-total of an array, as well as muliplying all items of array and finding the average. We do this by making use of `.reduce()` and the arrow `=>` function. You'll see it's the same basic line with different operators each corresponding to the variable name.
+To find the sum-total of sub-total of an array, as well as multiplying all items of array and finding the average. We do this by making use of `.reduce()` and the arrow `=>` function. You'll see it's the same basic line with different operators each corresponding to the variable name.
 
 ### `sumArr`
 
@@ -117,7 +117,7 @@ thisArray.reduce(flatArr);
 
 ### `.flat()` 
 
-*A potentailly better alternative!*
+*A potentially better alternative!*
 
 This is something new to me that is similar to `.reduce(flatArr)` except you can go by a specified depth.
 
@@ -238,7 +238,7 @@ document.querySelectorAll('img.lazyload')[0].src
 
 ## `storeEndpoint()`
 
-Using `storeEndpoint(url, name)` to request the enpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
+Using `storeEndpoint(url, name)` to request the endpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
 
 This also stored the endpoint url as `nameEndpoint.src_url` so you can quickly associate where this endpoint was fetched from. This stored url remains outside of the fetched endpoint as well.
 
