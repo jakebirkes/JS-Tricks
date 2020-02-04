@@ -9,7 +9,7 @@ This is simply to understand [why JavaScript does JavaScript things](js_behavior
 These are a [list of functions](js_functions.md) that are contained in this repo.
 
 - [`fibSeq()`](js_functions.md#fibseq)
-    - get the fibonnaci sequence limited by length.
+    - get the fibonacci sequence limited by length.
 - [`sumArr`](js_functions.md#sumarr)
     - add all values in an array.
 - [`subArr`](js_functions.md#subarr)
@@ -32,18 +32,20 @@ These are a [list of functions](js_functions.md) that are contained in this repo
     - will fetch and store json data.
 - [`regexStoreEndpoint`](js_functions.md#regexstoreendpoint)
     - will fetch and store json data only if `location.href` matches regex.
+- [`ampCSSBudget`](js_functions.md#ampcssbudget)
+    - use this to stay on top of your CSS while building in [AMP⚡](https://amp.dev/)
 
-The follwoing are currently written in jQuery.
+The following are currently written in jQuery.
 
 - [`stripDuplicateId`](js_functions.md#stripDuplicateId)
     - checks if elements have the same id and will remove all but the first id, but will leave elements alone.
 - [`killDuplicates`](js_functions.md#killDuplicates)
     - to remove obvious elements that are duplicates. 
 - [`killDuplicateText`](js_functions.md#lzysrc)
-    - removes duplicate elements that have repetative text content.
+    - removes duplicate elements that have repetitive text content.
 
 ## Breakup with jQuery
 
-This is to provide a way out of jQuery and use vanilla javascript more!
+This is to provide a way out of jQuery and use vanilla js more!
 
 [WIP](Breakup_with_jQuery.md)
