@@ -22,8 +22,6 @@ To find the sum-total of sub-total of an array, as well as multiplying all items
 var sumArr = (acc, cur) => acc + cur;
 ```
 
-#### Example
-
 ``` js
 let exArray = [1, 2, 3, 4, 5, 6];
 
@@ -41,8 +39,6 @@ exArrayTwo[2].reduce(sumArr);
 var subArr = (acc, cur) => acc - cur;
 ```
 
-#### Example
-
 ``` js
 let exArray = [1, 2, 3, 4];
 
@@ -55,8 +51,6 @@ exArray.reduce(subArr);
 ```js
 var multArr = (acc, cur) => acc * cur;
 ```
-
-#### Example
 
 ``` js
 let exArr = [1, 2, 3, 4, 5, 6];
@@ -72,8 +66,6 @@ exArr.reduce(multArr);
 
 **There is a much simpler way of finding the average of an array. Just use `multArr` as mentioned above and divide by `.length`:**
 
-#### Example
-
 ```js
 let exArr = [1, 2, 3, 4, 5, 6];
 
@@ -85,8 +77,6 @@ exArr.reduce(sumArr) / exArr.length;
 ## `partition()`
 
 You can nest arrays in one by any size you need using `partition(arr, length)`.
-
-### Example
 
 ```js
 
@@ -105,17 +95,15 @@ If you need to "flatten" these nested arrays back into one array. Use the follow
 var flatArr = (acc, it) => [...acc, ...it];
 ```
 
-### Example
-
 ```js
-// thisArray = [[0, 1], [2, 3], [4, 5], [6, 7]];
+let thisArray = [[0, 1], [2, 3], [4, 5], [6, 7]];
 
 thisArray.reduce(flatArr);
 
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-### `.flat()` 
+### `.flat()`
 
 *A potentially better alternative!*
 
@@ -135,27 +123,18 @@ thisArray.flat(); // default depth = 1
 
 Find the digital root of a non-negative integer by using `digRoot(num)`. The process continues until a single-digit number is reached.
 
-### Example
-
 ```js
 let val = 6765;
-
 digRoot(val);
-```
 
-### Result
-
-```js
-6
+> 6
 ```
 
 ## `highlight()`
 
-`highlight(msg, clr)` or `highlight(msg)`
+`highlight(msg)` or `highlight(msg, clr)`
 
 This will highlight with neon green in the console. Or if you want a different color, simply add a rgb or hex value.
-
-### Example
 
 ![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/highlightExample.png?raw=true)
 
@@ -179,8 +158,6 @@ stripDuplicateId();
 
 This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute. Any duplicate content that does exist, the target name will be stored in an array called `window.removedContent`.
 
-### Example
-
 ```js
 let arr = [
     'div.description',
@@ -201,8 +178,6 @@ killDuplicateContent(arr);
 
 For obvious duplicates that need to be removed. This will remove all except for the first element. Uses an array of strings like `killDuplicateText(arr)`. The difference being it will remove elements without checking anything first. Any duplicates that does exist, the target name will be stored in an array called `window.removedDuplicates`.
 
-### Example
-
 ```js
 let arr = [
     'h1',
@@ -221,8 +196,6 @@ killDuplicates(arr);
 `lzySrc(selector, dataWidth)`
 
 Solution for blocking Shopify's lazyload.js to manually set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
-
-### Example
 
 #### Before
 
@@ -254,8 +227,6 @@ Using `storeEndpoint(url, name)` to request the endpoint and storing it with a u
 This also stored the endpoint url as `nameEndpoint.src_url` so you can quickly associate where this endpoint was fetched from. This stored url remains outside of the fetched endpoint as well.
 
 *In the function, you will see this stored in the `window`. If you would like to have all data bundled together as one object, I would recommend adding in something like `window.siteData`.*
-
-### Example
 
 ```js
 storeEndpoint(location.origin + location.pathname + '.json', 'product');
