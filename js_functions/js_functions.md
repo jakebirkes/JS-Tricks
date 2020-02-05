@@ -60,11 +60,11 @@ exArr.reduce(multArr);
 > 720
 ```
 
-### Find the average easily with `multArr`
+### Find the average easily with `sumArr`
 
 ~~Get the average of an array using `avgArr()`.~~
 
-**There is a much simpler way of finding the average of an array. Just use `multArr` as mentioned above and divide by `.length`:**
+**There is a much simpler way of finding the average of an array. Just use `sumArr` as mentioned above and divide by `.length`:**
 
 ```js
 let exArr = [1, 2, 3, 4, 5, 6];
