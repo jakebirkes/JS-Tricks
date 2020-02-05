@@ -8,7 +8,7 @@ This is simply to understand [why JavaScript does JavaScript things](js_behavior
 
 These are a [list of functions](js_functions/js_functions.md) that are contained in this repo.
 
-### [`fibSeq()`](js_functions.md#fibseq)
+### [`fibSeq`](js_functions.md#fibseq)
 get the fibonacci sequence limited by length.
 ### [`sumArr`](js_functions.md#sumarr)
 add all values in an array.
