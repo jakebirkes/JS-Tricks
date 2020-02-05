@@ -9,6 +9,6 @@ function killDuplicates(arr) {
     });
     if (window.removedDuplicates.length > 0) {
         console.log("killDuplicates() removed the following duplicate elements:",
-        "\n",window.removedDuplicates);
+            "\n", window.removedDuplicates);
     }
 }

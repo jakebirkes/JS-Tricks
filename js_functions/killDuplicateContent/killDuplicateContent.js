@@ -7,8 +7,8 @@ function killDuplicateContent(arr) {
             $(el + ":gt(0)").remove();
         }
     });
-    if (window.removedContent.length > 0) { 
+    if (window.removedContent.length > 0) {
         console.log("killDuplicateContent() removed the following duplicate elements:",
-            "\n",window.removedContent);
+            "\n", window.removedContent);
     }
 }

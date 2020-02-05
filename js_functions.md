@@ -77,7 +77,7 @@ exArr.reduce(multArr);
 ```js
 let exArr = [1, 2, 3, 4, 5, 6];
 
-exArr.reduce(multArr) / exArr.length;
+exArr.reduce(sumArr) / exArr.length;
 
 > 3.5
 ```
