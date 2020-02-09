@@ -1,7 +1,5 @@
 function partition(arr, length) {
   return [].concat.apply([],
-    arr.map(function (elem, i) {
-      return i % length ? [] : [arr.slice(i, i + length)];
-    })
+    arr.map(i => i % length ? [] : [arr.slice(i, i + length)])
   );
 }
