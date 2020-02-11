@@ -1,11 +1,13 @@
 function ampCSSBudget() {
-    let size = Math.ceil(document.querySelector('style[amp-custom]').innerHTML.split('').length * 0.001),
-        perc = Math.ceil(size / 0.5), msg = `cssBudget: ${size}/50k ~ ${perc}%`;
+    let char = document.querySelector('style[amp-custom]').textContent.split('').length, 
+        limit = 75000, left = limit - char, perc = char / limit * 100, size = char / 1000, 
+        msg = `AMP CSS Budget: ${size}/75k ${perc}% ~ approx ${left} char left!`;
+    
     if (perc <= 50) {
-        highlight(msg);
+        tools.log(msg);
     } else if (perc <= 75) {
-        highlight(msg, "#ccff00");
+        tools.log(msg, "#ccff00");
     } else {
-        highlight(msg, "#ff073a");
+        tools.log(msg, "#ff073a");
     }
 }
