@@ -62,7 +62,7 @@ interface dataStructure<T> {
 }
 
 type dataStr = dataStructure<string>; // data type = string
-type numStr = dataStructure<number>; // data type = string
+type numStr = dataStructure<number>; // data type = number
 
 // data type = string
 const jakeWantulok: dataStr = {
