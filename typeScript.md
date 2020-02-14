@@ -44,6 +44,8 @@ const thisFunct = <T>(arr: Array<T>) => arr.map((e: any) => e + 1);
 thisFunct(strArr); // works! and array types are defined
 ```
 
+If we want make sure a function will error if an invalid object doesn't meet the parameter requirements, we can specify a key and what its type should be.
+
 ```ts
 const totalAmount = <T extends {checking: number, savings: number}>(obj: T) => {
     return {
@@ -53,6 +55,10 @@ const totalAmount = <T extends {checking: number, savings: number}>(obj: T) => {
 };
 ```
 
+In an object, if we know that one type will vary we can give that key a generic value as well.
+
+### Objects
+
 ```ts
 interface dataStructure<T> {
     id: number,
@@ -61,14 +67,15 @@ interface dataStructure<T> {
     data: T // flexible
 }
 
+// what flavor is data going to be?
 type dataStr = dataStructure<string>; // data type = string
 type numStr = dataStructure<number>; // data type = number
 
-// data type = string
+// using the dataStructure interface and restricting data to string
 const jakeWantulok: dataStr = {
     id: 1234,
     firstName: "Jake",
     lastName: "Wantulok",
-    data: "Animal Lover" // only valid if it's a string
+    data: "Animal Lover" // only valid if it's a string!
 }
 ```
