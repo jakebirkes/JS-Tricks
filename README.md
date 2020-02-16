@@ -6,7 +6,7 @@ This is simply to understand [why JavaScript does JavaScript things](js_behavior
 
 ## Functions
 
-These are a [list of functions](js_functions/js_functions.md) that are contained in this repo.
+These are a [list of functions](js_functions/js_functions.md) that are contained in this repository.
 
 ### [`fibSeq`](js_functions/js_functions.md#fibseq)
 
