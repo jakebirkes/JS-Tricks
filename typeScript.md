@@ -1,5 +1,37 @@
 # Start Using TypeScript
 
+```bash
+npm install -g typescript
+```
+## Set up tsconfig.json
+
+In your project, use the following command to create a tsconfig.json
+
+```bash
+tsc --init
+```
+Here's what how I have mine set up. After you done with this, just create a `.ts` file anywhere in your project and begin!
+
+```json
+{
+    "compilerOptions": {
+        "module": "esnext", // Specify module code generation
+        "target": "esnext", // Specify ECMAScript target version
+        "watch": true, // Run the compiler in watch mode
+        "removeComments": true, // Remove all comments except copy-right header comments beginning with /*!
+        "lib": ["DOM", "es2020"], // List of library files to be included in the compilation
+        "moduleResolution": "Node" // Determine how modules get resolved
+    },
+    "include": [ // Files included
+        "./js_functions/**/*" // you will need to change this :)
+    ],
+    "exclude": [ // Files excluded
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
+```
+
 ## Generics
 
 ### Arrays

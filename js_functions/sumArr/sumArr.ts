@@ -1,0 +1,1 @@
+var sumArr = (acc:number, cur:number) => acc + cur;

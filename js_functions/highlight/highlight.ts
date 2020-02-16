@@ -1,8 +1,7 @@
-function highlight(msg, clr) {
+function highlight(msg:any, clr:string) {
     if (clr) {
         console.log("%c" + msg, `color:${clr}`);
-    }
-    else {
+    } else {
         console.log("%c" + msg, "color:#00FF7F");
     }
 }

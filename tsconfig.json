@@ -1,0 +1,18 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+      "module": "esnext",
+      "target": "esnext",
+      "watch": true,
+      "removeComments": true,
+      "lib": ["DOM", "es2020"],
+      "moduleResolution": "Node"
+  },
+  "include": [
+      "./js_functions/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+  ]
+}
