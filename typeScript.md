@@ -12,7 +12,7 @@ tsc --init
 ```
 Here's what how I have mine set up. After you done with this, just create a `.ts` file anywhere in your project and begin!
 
-```json
+```js
 {
     "compilerOptions": {
         "module": "esnext", // Specify module code generation
