@@ -6,15 +6,11 @@ This is simply to understand [why JavaScript does JavaScript things](js_behavior
 
 ## Breakup with jQuery
 
-This is to provide a way out of jQuery and use vanilla js more!
-
-[WIP](Breakup_with_jQuery.md)
+This is to provide a way out of jQuery and [use vanilla js more!](Breakup_with_jQuery.md)
 
 ## Get Started with TypeScript
 
-Easily get a handle on your code and proactively avoid potential bugs! 
-
-[WIP](typeScript.md)
+Easily get a handle on your code and [proactively avoid potential bugs!](typeScript.md)
 
 ## JS Functions
 
