@@ -5,7 +5,7 @@ npm install -g typescript
 ```
 ## Set up tsconfig.json
 
-In your project, use the following command to create a tsconfig.json. (Trust me, you'll know why I'm having you do it this way.)
+In your project, use the following command to create a tsconfig.json.
 
 ```bash
 tsc --init
