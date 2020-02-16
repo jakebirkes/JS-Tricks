@@ -1,10 +1,22 @@
 # JS Tricks
 
-## Behavior
+## JavaScript Behavior
 
 This is simply to understand [why JavaScript does JavaScript things](js_behavior.md).
 
-## Functions
+## Breakup with jQuery
+
+This is to provide a way out of jQuery and use vanilla js more!
+
+[WIP](Breakup_with_jQuery.md)
+
+## Get Started with TypeScript
+
+Easily get a handle on your code and proactively avoid potential bugs! 
+
+[WIP](typeScript.md)
+
+## JS Functions
 
 These are a [list of functions](js_functions/js_functions.md) that are contained in this repository.
 
@@ -73,9 +85,3 @@ to remove obvious elements that are duplicates.
 ### [`killDuplicateText`](js_functions/js_functions.md#lzysrc)
 
 removes duplicate elements that have repetitive text content.
-
-## Breakup with jQuery
-
-This is to provide a way out of jQuery and use vanilla js more!
-
-[WIP](Breakup_with_jQuery.md)
