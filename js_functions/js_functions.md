@@ -119,7 +119,7 @@ thisArray.flat(); // default depth = 1
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-## `digRoot`
+## `digRoot()`
 
 Find the digital root of a non-negative integer by using `digRoot(num)`. The process continues until a single-digit number is reached.
 
@@ -254,8 +254,10 @@ regexStoreEndpoint(location.origin + location.pathname + '.json', 'inventory', /
 // No errors were made :)
 ```
 
-## `ampCSSBudget()`
+## `ampCssBudget()`
 
 ***[AMP⚡](https://amp.dev/)***
 
 Because AMP restricts pages to a [75k CSS Budget](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/?format=websites#add-styles-to-a-page) you can check in the console how close you are in reaching this limit by evaluating the number of characters used in `style[amp-custom]`. Depending on how much is used, it will highlight in green (<= 50%), yellow (<= 75%), or red (> 75%).
+
+![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/ampCssBudget.png?raw=true)

@@ -3,6 +3,7 @@
 ```bash
 npm install -g typescript
 ```
+
 ## Set up tsconfig.json
 
 In your project, use the following command to create a tsconfig.json.
@@ -79,7 +80,7 @@ thisFunct(strArr); // works!
 
 ### Objects
 
-In an object, if we know that one type will vary we can give that key a generic value as well and specify its type later. 
+In an object, if we know that one type will vary we can give that key a generic value as well and specify its type later.
 
 ```ts
 interface dataStructure<T> {
