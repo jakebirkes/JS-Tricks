@@ -90,3 +90,83 @@ Convert the number to a whole number and convert it back to its true output.
 
 905.4 // result
 ```
+
+## Objects
+
+In JavaScript, `null` is considered as an object. So using `typeof` can be tricky.
+
+```js
+var test = null;
+console.log(typeof test === "object");
+
+> true
+```
+
+This is a safer way to check!
+
+```js
+console.log((typeof nullObj === null) && (typeof test === "object"));
+> false
+```
+
+## Functions
+
+```js
+function test1()
+{
+  return {
+      bar: "hello"
+  };
+}
+
+function test2()
+{
+  return
+  {
+      bar: "hello"
+  };
+}
+
+console.log(test1());
+> Object { bar: "hello" };
+
+console.log(test2());
+> undefined // or might throw an error
+```
+
+What's going on? Well, when `test2()` is ran after `test1()` a semicolon is added between return and the object.
+
+```js
+function test2()
+{
+  return; /* <--- this will add a semicolon!
+  {
+      bar: "hello"
+  };
+}
+```
+
+The bracket has been ignored so a semicolon was added right after `return` in `test2()`, making the rest of the code unreachable. A good way to avoid this is wrapping everything in parenthesis `()` for our `return`. Also, staying consistent is key.
+
+```js
+function test1()
+{
+  return ({
+      bar: "hello"
+  });
+}
+
+function test2()
+{
+  return (
+  { // even if it differs, it will still work
+      bar: "hello"
+  });
+}
+
+console.log(test1());
+> Object { bar: "hello" };
+
+console.log(test2());
+> Object { bar: "hello" };
+```
