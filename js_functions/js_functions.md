@@ -183,7 +183,7 @@ killDuplicates(arr);
     ["h1", "form.subcribe", "nav"]
 ```
 
-## [`lzySrc()`](lzySrc\lzySrc.js)
+### [`lzySrc()`](lzySrc\lzySrc.js)
 
 `lzySrc(selector: string, dataWidth: number)`
 
@@ -228,7 +228,7 @@ productEndpoint.src_url
 > "https://www.example.com/products/exampleproduct.json"
 ```
 
-## [`regexStoreEndpoint()`](regexStoreEndpoint\regexStoreEndpoint.js)
+### [`regexStoreEndpoint()`](regexStoreEndpoint\regexStoreEndpoint.js)
 
 `regexStoreEndpoint(url, name, regex)` is more situational and works much like `storeEndpoint` but will only fetch an endpoint if the page URL depending on a regex match. This is so it's not waiting on a promise that is expected to fail.
 
