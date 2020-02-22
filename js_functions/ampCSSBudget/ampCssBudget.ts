@@ -1,10 +1,10 @@
 function ampCssBudget() {
     let char = document.querySelector('style[amp-custom]').textContent.split('').length,
-        limit = 75000,
+        limit = 50000,
         left = limit - char,
         perc = char / limit * 100,
         size = char / 1000,
-        msg = `AMP CSS Budget: ${Math.round(100*size)/100}/75k ${Math.round(100*perc)/100}% ~ approx ${left} char left!`;
+        msg = `AMP CSS Budget: ${Math.round(size)}/50k ${Math.round(perc)}% ~ approx ${left} char left!`;
 
     if (perc <= 50) {
         console.log("%c" + msg, "color:#00FF7F");

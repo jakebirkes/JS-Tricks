@@ -1,1 +1,1 @@
-var multArr = (acc, cur) => acc * cur;
+const multArr = (acc, cur) => acc * cur;

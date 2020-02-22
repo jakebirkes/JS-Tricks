@@ -1,4 +1,4 @@
-const killDuplicateContent = (arr) => {
+const killDuplicateContent = (arr: Array <string>) => {
     let removedDuplicates = [];
     arr.forEach(str => {
         let el = document.querySelectorAll(str), removed = false;

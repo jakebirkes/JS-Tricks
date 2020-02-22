@@ -1,4 +1,4 @@
-# Breakup with jQuery
+# Breakup With jQuery
 
 ## `$('')`
 
