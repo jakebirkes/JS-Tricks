@@ -1,10 +1,10 @@
 # Functions
 
-## `fibSeq()`
+## Commonly Known
+
+### [`fibSeq(num: <number>)`](fibSeq\fibSeq.js)
 
 Fibonacci Sequence limited by length using `fibSeq(length)`.
-
-### Example:
 
 ```js
 fibSeq(6); // only taking the first 6
@@ -12,11 +12,13 @@ fibSeq(6); // only taking the first 6
 > [1, 1, 2, 3, 5, 8]
 ```
 
-## `sumArr`, `subArr`, & `multArr`
+## Working With Numeric Arrays
+
+### `sumArr`, `subArr`, & `multArr`
 
 To find the sum-total of sub-total of an array, as well as multiplying all items of array and finding the average. We do this by making use of `.reduce()` and the arrow `=>` function. You'll see it's the same basic line with different operators each corresponding to the variable name.
 
-### `sumArr`
+#### `sumArr`
 
 ```js
 var sumArr = (acc, cur) => acc + cur;
@@ -33,7 +35,7 @@ exArrayTwo[2].reduce(sumArr);
 > 9 // 4 + 5
 ```
 
-### `subArr`
+#### `subArr`
 
 ```js
 var subArr = (acc, cur) => acc - cur;
@@ -46,7 +48,7 @@ exArray.reduce(subArr);
 > -8 // 1 - 2 ...
 ```
 
-### `multArr`
+#### `multArr`
 
 ```js
 var multArr = (acc, cur) => acc * cur;
@@ -60,7 +62,7 @@ exArr.reduce(multArr);
 > 720
 ```
 
-### Find the average easily with `sumArr`
+#### Find the average easily with `sumArr`
 
 ~~Get the average of an array using `avgArr()`.~~
 
@@ -74,7 +76,7 @@ exArr.reduce(sumArr) / exArr.length;
 > 3.5
 ```
 
-## `partition()`
+### `partition(arr: Array<number>)`
 
 You can nest arrays in one by any size you need using `partition(arr, length)`.
 
@@ -87,7 +89,7 @@ partition(thisArray, 2); // grouping them in pairs
 > [[0, 1], [2, 3], [4, 5], [6, 7]]
 ```
 
-## `flatArr`
+### `flatArr`
 
 If you need to "flatten" these nested arrays back into one array. Use the following:
 
@@ -119,7 +121,7 @@ thisArray.flat(); // default depth = 1
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-## `digRoot()`
+### `digRoot(num: number)`
 
 Find the digital root of a non-negative integer by using `digRoot(num)`. The process continues until a single-digit number is reached.
 
@@ -130,33 +132,25 @@ digRoot(val);
 > 6
 ```
 
-## `highlight()`
+## DOM Manipulation
 
-`highlight(msg)` or `highlight(msg, clr)`
+### [`stripDuplicateIds(arr: Array<string>)`](stripDuplicateIds/_stripDuplicateIdsOLD.js)
 
-This will highlight with neon green in the console. Or if you want a different color, simply add a rgb or hex value.
+If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any element that has a duplicate id, the target string will be stored in an array which will later display in the console.
 
-![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/highlightExample.png?raw=true)
-
-## `stripDuplicateId()`
-
-*Written in jQuery*
-
-If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any duplicate id that does exist, its name will be stored in an array called `window.removedIDs`.
+*There is a jQuery version available called [`_stripDuplicateIdsOLD.js`](stripDuplicateIds/_stripDuplicateIdsOLD.js)*
 
 ```js
-stripDuplicateId();
-> "stripDuplicateId() stripped the following duplicate ids:",
-    ["#fetured-section","#productCard"] // fake examples...
+stripDuplicateIds();
+> "stripDuplicateIds() stripped the following duplicate ids:",
+    ["#fetured-section","#productCard"]
 ```
 
-## `killDuplicateContent()`
+### [`killDuplicateContent(arr: Array<string>)`](killDuplicateContent/killDuplicateContent.js)
 
-`killDuplicateContent(arr)`
+This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute. Any element that contains duplicate content, the target string will be stored in an array which will later display in the console.
 
-*Written in jQuery*
-
-This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute. Any duplicate content that does exist, the target name will be stored in an array called `window.removedContent`.
+*There is a jQuery version available called [`_killDuplicateContent.js`](killDuplicateContent/_killDuplicateContentOLD.js)*
 
 ```js
 let arr = [
@@ -170,13 +164,11 @@ killDuplicateContent(arr);
     ["div.description", "span.product-price", "p.specifications"]
 ```
 
-## `killDuplicates()`
+### [`killDuplicates(arr: Array<string>)`](killDuplicates/killDuplicates.js)
 
-`killDuplicates(arr)`
+For obvious duplicates that need to be removed from the DOM. This will remove all except for the first element. Any duplicate that does exist, the target string will be stored in an array which will later display in the console.
 
-*Written in jQuery*
-
-For obvious duplicates that need to be removed. This will remove all except for the first element. Uses an array of strings like `killDuplicateText(arr)`. The difference being it will remove elements without checking anything first. Any duplicates that does exist, the target name will be stored in an array called `window.removedDuplicates`.
+*There is a jQuery version available called [`_killDuplicatesOLD.js`](killDuplicates/_killDuplicatesOLD.js)*
 
 ```js
 let arr = [
@@ -191,13 +183,11 @@ killDuplicates(arr);
     ["h1", "form.subcribe", "nav"]
 ```
 
-## `lzySrc()`
+### [`lzySrc()`](lzySrc\lzySrc.js)
 
-`lzySrc(selector, dataWidth)`
+`lzySrc(selector: string, dataWidth: number)`
 
-Solution for blocking Shopify's lazyload.js to manually set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array.
-
-#### Before
+Solution when plugin is blocked that utilizes `src-set` for images. This will manually set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array. This function was specifically made for lazyload.js, so you might need to alter it for your own project.
 
 Check to see what is available in the `data-widths` attribute.
 
@@ -209,8 +199,6 @@ document.querySelectorAll('img.lazyload')[0].src
 > "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_300x300.jpg?v=1553094531"
 ```
 
-#### After
-
 Target all `img` tags with the `lazyload` class and select a width from the array.
 
 ```js
@@ -220,7 +208,9 @@ document.querySelectorAll('img.lazyload')[0].src
 > "http://cdn.shopify.com/s/files/1/2345/6789/files/example_img_900x.jpg?v=1553094531"
 ```
 
-## `storeEndpoint()`
+## Fetching
+
+### [`storeEndpoint()`](storeEndpoint\storeEndpoint.js)
 
 Using `storeEndpoint(url, name)` to request the endpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
 
@@ -238,7 +228,7 @@ productEndpoint.src_url
 > "https://www.example.com/products/exampleproduct.json"
 ```
 
-## `regexStoreEndpoint()`
+### [`regexStoreEndpoint()`](regexStoreEndpoint\regexStoreEndpoint.js)
 
 `regexStoreEndpoint(url, name, regex)` is more situational and works much like `storeEndpoint` but will only fetch an endpoint if the page URL depending on a regex match. This is so it's not waiting on a promise that is expected to fail.
 
@@ -251,13 +241,23 @@ regexStoreEndpoint(location.origin + location.pathname + '.json', 'inventory', /
 // Example: location.href ~ www.example.com/collections/watches
 > "regexStoreEndpoint(): url did not match /necklace/"
 
-// No errors were made :)
+// No errors were made
 ```
 
-## `ampCssBudget()`
+## Console
+
+### [`highlight()`](highlight\highlight.js)
+
+`highlight(msg)` or `highlight(msg, clr)`
+
+This will highlight with neon green in the console. Or if you want a different color, simply add a rgb or hex value.
+
+![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/highlightExample.png?raw=true)
+
+### [`ampCssBudget()`](ampCssBudget\ampCssBudget.js)
 
 ***[AMP⚡](https://amp.dev/)***
 
-Because AMP restricts pages to a [75k CSS Budget](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/?format=websites#add-styles-to-a-page) you can check in the console how close you are in reaching this limit by evaluating the number of characters used in `style[amp-custom]`. Depending on how much is used, it will highlight in green (<= 50%), yellow (<= 75%), or red (> 75%).
+Because AMP restricts pages to a [50k CSS Budget](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/?format=websites#add-styles-to-a-page) you can check in the console how close you are in reaching this limit by evaluating the number of characters used in `style[amp-custom]`. Depending on how much is used, it will highlight in green (<= 50%), yellow (<= 75%), or red (> 75%).
 
 ![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/ampCssBudget.png?raw=true)

@@ -1,6 +1,6 @@
 function ampCssBudget() {
     let char = document.querySelector('style[amp-custom]').textContent.split('').length,
-        limit = 75000,
+        limit = 50000,
         left = limit - char,
         perc = char / limit * 100,
         size = char / 1000,

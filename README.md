@@ -4,80 +4,88 @@
 
 This is simply to understand [why JavaScript does JavaScript things](js_behavior.md).
 
-## Breakup with jQuery
+## Breakup With jQuery
 
 This is to provide a way out of jQuery and [use vanilla js more!](Breakup_with_jQuery.md)
 
-## Get Started with TypeScript
+## Start Using TypeScript
 
-Easily get a handle on your code and [proactively avoid potential bugs!](typeScript.md)
+Easily get a handle on your code and [proactively avoid potential bugs](typeScript.md)
 
 ## JS Functions
 
-These are a [list of functions](js_functions/js_functions.md) that are contained in this repository.
+Here is a [list of functions](js_functions/js_functions.md) that are contained in this repository.
 
-### [`fibSeq`](js_functions/js_functions.md#fibseq)
+### Commonly Known
 
-get the fibonacci sequence limited by length.
+- [`fibSeq`](js_functions/js_functions.md#fibseq)
 
-### [`sumArr`](js_functions/js_functions.md#sumarr)
+  - get the fibonacci sequence limited by length.
 
-add all values in an array.
+### Working With Numeric Arrays
 
-### [`subArr`](js_functions/js_functions.md#subarr)
+- [`sumArr`](js_functions/js_functions.md#sumarr)
 
-subtract all values in an array.
+  - add all values in an array.
 
-### [`multArr`](js_functions/js_functions.md#multarr)
+- [`subArr`](js_functions/js_functions.md#subarr)
 
-multiply all values in an array.
+  - subtract all values in an array.
 
-### [`flatArr`](js_functions/js_functions.md#flatarr)
+- [`multArr`](js_functions/js_functions.md#multarr)
 
-flatten a nested array into one array.
+  - multiply all values in an array.
 
-### [`avgArr`](js_functions/js_functions.md#avgarr)
+- [`flatArr`](js_functions/js_functions.md#flatarr)
 
-find the average of an array.
+  - flatten a nested array into one array.
 
-### [`partition`](js_functions/js_functions.md#partition)
+- [`avgArr`](js_functions/js_functions.md#avgarr)
 
-segment an array into a nested array controlled by length.
+  - find the average of an array.
 
-### [`digRoot`](js_functions/js_functions.md#digroot)
+- [`partition`](js_functions/js_functions.md#partition)
 
-find the digital root of a number.
+  - segment an array into a nested array controlled by length.
 
-### [`trace`](js_functions/js_functions.md#trace)
+- [`digRoot`](js_functions/js_functions.md#digroot)
 
-log/trace in neon green to quickly find in the console.
+  - find the digital root of a number.
 
-### [`lzySrc`](js_functions/js_functions.md#lzysrc)
+### DOM Manipulation
 
-solution for images on Shopify sites that use lazyload.js if plugin is blocked.
+- [`lzySrc`](js_functions/js_functions.md#lzysrc)
 
-### [`storeEndpoint`](js_functions/js_functions.md#storeendpoint)
+  - solution for images on Shopify sites that use lazyload.js if plugin is blocked.
 
-will fetch and store json data.
+- [`killDuplicateContent`](js_functions/js_functions.md#killDuplicateContent)
 
-### [`regexStoreEndpoint`](js_functions/js_functions.md#regexstoreendpoint)
+  - removes duplicate elements that have repetitive text content.
 
-will fetch and store json data only if `location.href` matches regex.
+- [`killDuplicates`](js_functions/js_functions.md#killDuplicates)
 
-### [`ampCSSBudget`](js_functions/js_functions.md#ampcssbudget)
+  - to remove obvious elements that are duplicates.
 
-to stay on top of CSS while building in [AMP⚡](https://amp.dev/)
+- [`stripDuplicateIds`](js_functions/js_functions.md#stripDuplicateIds)
 
-## The following functions are currently written in jQuery
+  - checks if elements have the same id and will remove all but the first id, but will leave elements alone.
 
-### [`stripDuplicateId`](js_functions/js_functions.md#stripDuplicateId)
+### Fetching
 
-checks if elements have the same id and will remove all but the first id, but will leave elements alone.
+- [`storeEndpoint`](js_functions/js_functions.md#storeendpoint)
 
-### [`killDuplicates`](js_functions/js_functions.md#killDuplicates)
+  - will fetch and store json data.
 
-to remove obvious elements that are duplicates.
+- [`regexStoreEndpoint`](js_functions/js_functions.md#regexstoreendpoint)
 
-### [`killDuplicateText`](js_functions/js_functions.md#lzysrc)
+  - will fetch and store json data only if `location.href` matches regex.
 
-removes duplicate elements that have repetitive text content.
+### Console
+
+- [`highlight`](js_functions/js_functions.md#highlight)
+
+  - log/trace in neon green to quickly find in the console.
+
+- [`ampCSSBudget`](js_functions/js_functions.md#ampcssbudget)
+
+  - to stay on top of CSS while building in [AMP⚡](https://amp.dev/)

@@ -1,1 +1,1 @@
-var flatArr = (acc, it) => [...acc, ...it];
+const flatArr = (acc, it) => [...acc, ...it];
