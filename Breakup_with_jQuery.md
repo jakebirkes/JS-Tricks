@@ -1,5 +1,11 @@
 # Breakup With jQuery
 
+## Resources
+
+⭐ [You Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
+
+⭐ [Moving From jQuery to Vanilla JavaScript](https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/)
+
 ## `$('')`
 
 One conversation I had with someone made the argument jQuery is more "convenient" and brought up how to select an element. Well yes, that is more convenient than writing `document.querySelectorAll()` constantly, but do you know what you can do?

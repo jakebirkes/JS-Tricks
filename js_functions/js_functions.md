@@ -2,7 +2,9 @@
 
 ## Commonly Known
 
-### [`fibSeq(num: <number>)`](fibSeq\fibSeq.js)
+### `fibSeq()`
+
+[`fibSeq(num: <number>)`](fibSeq\fibSeq.js)
 
 Fibonacci Sequence limited by length using `fibSeq(length)`.
 
@@ -12,7 +14,7 @@ fibSeq(6); // only taking the first 6
 > [1, 1, 2, 3, 5, 8]
 ```
 
-## Working With Numeric Arrays
+## Working With Arrays
 
 ### `sumArr`, `subArr`, & `multArr`
 
@@ -76,7 +78,9 @@ exArr.reduce(sumArr) / exArr.length;
 > 3.5
 ```
 
-### `partition(arr: Array<number>)`
+### `partition()`
+
+`partition(arr: Array<number>)`
 
 You can nest arrays in one by any size you need using `partition(arr, length)`.
 
@@ -121,7 +125,11 @@ thisArray.flat(); // default depth = 1
 > [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-### `digRoot(num: number)`
+### `digRoot()`
+
+```ts
+digRoot(num: number)`
+```
 
 Find the digital root of a non-negative integer by using `digRoot(num)`. The process continues until a single-digit number is reached.
 
@@ -132,9 +140,33 @@ digRoot(val);
 > 6
 ```
 
+### `parseCombine()`
+
+This is a unique situation for complex strings that need to split into an arrays. If a character meets the requirements of a regular expression then concatenate this character with the previous so they belong together.
+
+```js
+let test = "StXpPrAToR";
+```
+
+We want to get an array that looks like this where any lower case character belongs to the previous uppercase character:
+
+```js
+["St", "Xp", "Pr", "A", "To", "R"]
+```
+
+Here we store the outcome into a new variable and target any character that is lowercase.
+
+```js
+const testArr = parseCombine(test, /[a-z]/); // any lowercase match
+
+// testArr = ["St", "Xp", "Pr", "A", "To", "R"];
+```
+
 ## DOM Manipulation
 
-### [`stripDuplicateIds(arr: Array<string>)`](stripDuplicateIds/_stripDuplicateIdsOLD.js)
+### `stripDuplicateIds()`
+
+[`stripDuplicateIds(arr: Array<string>)`](stripDuplicateIds/_stripDuplicateIdsOLD.js)
 
 If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any element that has a duplicate id, the target string will be stored in an array which will later display in the console.
 
@@ -146,7 +178,9 @@ stripDuplicateIds();
     ["#fetured-section","#productCard"]
 ```
 
-### [`killDuplicateContent(arr: Array<string>)`](killDuplicateContent/killDuplicateContent.js)
+### `killDuplicateContent()`
+
+[`killDuplicateContent(arr: Array<string>)`](killDuplicateContent/killDuplicateContent.js)
 
 This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute. Any element that contains duplicate content, the target string will be stored in an array which will later display in the console.
 
@@ -164,7 +198,9 @@ killDuplicateContent(arr);
     ["div.description", "span.product-price", "p.specifications"]
 ```
 
-### [`killDuplicates(arr: Array<string>)`](killDuplicates/killDuplicates.js)
+### `killDuplicates()`
+
+[`killDuplicates(arr: Array<string>)`](killDuplicates/killDuplicates.js)
 
 For obvious duplicates that need to be removed from the DOM. This will remove all except for the first element. Any duplicate that does exist, the target string will be stored in an array which will later display in the console.
 
@@ -183,9 +219,9 @@ killDuplicates(arr);
     ["h1", "form.subcribe", "nav"]
 ```
 
-### [`lzySrc()`](lzySrc\lzySrc.js)
+### `lzySrc()`
 
-`lzySrc(selector: string, dataWidth: number)`
+[`lzySrc(selector: string, dataWidth: number)`](lzySrc\lzySrc.js)
 
 Solution when plugin is blocked that utilizes `src-set` for images. This will manually set a valid `src` attribute by replacing `{width}` in `data-src` with a chosen value from `data-widths` string perceived as an array. This function was specifically made for lazyload.js, so you might need to alter it for your own project.
 
@@ -210,7 +246,7 @@ document.querySelectorAll('img.lazyload')[0].src
 
 ## Fetching
 
-### [`storeEndpoint()`](storeEndpoint\storeEndpoint.js)
+### `storeEndpoint()`
 
 Using `storeEndpoint(url, name)` to request the endpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
 
@@ -228,7 +264,7 @@ productEndpoint.src_url
 > "https://www.example.com/products/exampleproduct.json"
 ```
 
-### [`regexStoreEndpoint()`](regexStoreEndpoint\regexStoreEndpoint.js)
+### `regexStoreEndpoint()`
 
 `regexStoreEndpoint(url, name, regex)` is more situational and works much like `storeEndpoint` but will only fetch an endpoint if the page URL depending on a regex match. This is so it's not waiting on a promise that is expected to fail.
 
@@ -246,7 +282,7 @@ regexStoreEndpoint(location.origin + location.pathname + '.json', 'inventory', /
 
 ## Console
 
-### [`highlight()`](highlight\highlight.js)
+### `highlight()`
 
 `highlight(msg)` or `highlight(msg, clr)`
 
@@ -254,7 +290,7 @@ This will highlight with neon green in the console. Or if you want a different c
 
 ![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/highlightExample.png?raw=true)
 
-### [`ampCssBudget()`](ampCssBudget\ampCssBudget.js)
+### `ampCssBudget()`
 
 ***[AMP⚡](https://amp.dev/)***
 

@@ -22,7 +22,7 @@ Here is a [list of functions](js_functions/js_functions.md) that are contained i
 
   - get the fibonacci sequence limited by length.
 
-### Working With Numeric Arrays
+### Working With Arrays
 
 - [`sumArr`](js_functions/js_functions.md#sumarr)
 
@@ -51,6 +51,10 @@ Here is a [list of functions](js_functions/js_functions.md) that are contained i
 - [`digRoot`](js_functions/js_functions.md#digroot)
 
   - find the digital root of a number.
+
+- [`parseCombine`](js_functions/js_functions.md#parseCombine)
+
+  - Specify the outcome of an array from a complex string using regex.
 
 ### DOM Manipulation
 
