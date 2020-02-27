@@ -44,9 +44,9 @@ Here is a [list of functions](js_functions/js_functions.md) that are contained i
 
   - find the average of an array.
 
-- [`partition`](js_functions/js_functions.md#partition)
+- [`nestArr`](js_functions/js_functions.md#nestArr)
 
-  - segment an array into a nested array controlled by length.
+  - segment an array with nested arrays controlled by length.
 
 - [`digRoot`](js_functions/js_functions.md#digroot)
 

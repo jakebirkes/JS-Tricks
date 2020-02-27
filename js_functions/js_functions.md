@@ -78,9 +78,9 @@ exArr.reduce(sumArr) / exArr.length;
 > 3.5
 ```
 
-### `partition()`
+### `nestArr()`
 
-`partition(arr: Array<number>)`
+`nestArr(arr: Array<number>)`
 
 You can nest arrays in one by any size you need using `partition(arr, length)`.
 
@@ -127,9 +127,9 @@ thisArray.flat(); // default depth = 1
 
 ### `digRoot()`
 
-```ts
-digRoot(num: number)`
-```
+`
+digRoot(num: number)
+`
 
 Find the digital root of a non-negative integer by using `digRoot(num)`. The process continues until a single-digit number is reached.
 
@@ -184,7 +184,7 @@ stripDuplicateIds();
 
 This will check if the text contained are repeated in the same elements and will remove all except for the first element. This takes an array of strings. A safe way to retain elements with unique content even if targeted using the same class name or attribute. Any element that contains duplicate content, the target string will be stored in an array which will later display in the console.
 
-*There is a jQuery version available called [`_killDuplicateContent.js`](killDuplicateContent/_killDuplicateContentOLD.js)*
+*There is a jQuery version available called [`_killDuplicateContentOLD.js`](killDuplicateContent/_killDuplicateContentOLD.js)*
 
 ```js
 let arr = [
