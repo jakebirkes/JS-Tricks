@@ -90,6 +90,6 @@ Here is a [list of functions](js_functions/js_functions.md) that are contained i
 
   - log/trace in neon green to quickly find in the console.
 
-- [`ampCSSBudget`](js_functions/js_functions.md#ampcssbudget)
+- [`ampCssBudget`](js_functions/js_functions.md#ampcssbudget)
 
   - to stay on top of CSS while building in [AMP⚡](https://amp.dev/)
