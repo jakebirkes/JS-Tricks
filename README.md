@@ -70,7 +70,7 @@ Here is a [list of functions](js_functions/js_functions.md) that are contained i
 
   - to remove obvious elements that are duplicates.
 
-- [`stripDuplicateIds`](js_functions/js_functions.md#stripDuplicateIds)
+- [`stripNonUniqueIds`](js_functions/js_functions.md#stripNonUniqueIds)
 
   - checks if elements have the same id and will remove all but the first id, but will leave elements alone.
 

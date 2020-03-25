@@ -164,17 +164,17 @@ const testArr = parseCombine(test, /[a-z]/); // any lowercase match
 
 ## DOM Manipulation
 
-### `stripDuplicateIds()`
+### `stripNonUniqueIds()`
 
-[`stripDuplicateIds(arr: Array<string>)`](stripDuplicateIds/_stripDuplicateIdsOLD.js)
+[`stripNonUniqueIds(arr: Array<string>)`](stripNonUniqueIds/stripNonUniqueIds.js)
 
-If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any element that has a duplicate id, the target string will be stored in an array which will later display in the console.
+If the document has an issue where there are more than one of the same id, but the elements do not need to be removed, simply call this function. Any element that has a non-unique id, the target string will be stored in an array which will later display in the console.
 
-*There is a jQuery version available called [`_stripDuplicateIdsOLD.js`](stripDuplicateIds/_stripDuplicateIdsOLD.js)*
+*There is a jQuery version available called [`_stripDuplicateIdsOLD.js`](stripNonUniqueIds/_stripDuplicateIdsOLD.js)*
 
 ```js
-stripDuplicateIds();
-> "stripDuplicateIds() stripped the following duplicate ids:",
+stripNonUniqueIds();
+> "stripNonUniqueIds() stripped the following non-unique ids ~ elements retained:",
     ["#fetured-section","#productCard"]
 ```
 

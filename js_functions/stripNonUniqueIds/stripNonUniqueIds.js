@@ -1,8 +1,8 @@
-const stripDuplicateIds = (arr) => {
+const stripNonUniqueIds = (arr) => {
     let removedIds = [];
     arr.forEach(str => {
         if (/\#/.test(str) === false) {
-            console.error(`stripDuplicateIds() please use a valid selector, '#${str}' instead of '${str}'`);
+            console.error(`stripNonUniqueIds() please use a valid selector, '#${str}' instead of '${str}'`);
             return;
         }
         let el = document.querySelectorAll(str), removed = false;
@@ -20,7 +20,7 @@ const stripDuplicateIds = (arr) => {
         }
     });
     if (removedIds.length > 0) {
-        console.log("stripDuplicateIds() removed the following duplicate elements:"),
+        console.log("stripNonUniqueIds() removed the following non-unique ids ~ elements retained:"),
             console.log(removedIds);
     }
 };
