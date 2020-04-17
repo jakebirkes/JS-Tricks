@@ -56,3 +56,20 @@ $(‘button’).attr(‘disabled, ‘true’);
 // vanilla js ~ will work!
 document.getElementsByTagName('button').disabled = true
 ```
+
+## unwrap
+
+```js
+
+let target = document.querySelectorAll("div");
+target.outerHTML = target.innerHTML;
+```
+
+## replaceWith
+
+```js
+let p = document.createElement("p");
+
+p.innerHTML = target.innerHTML;
+target.parentNode.replaceChild(target, p);
+```
