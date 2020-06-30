@@ -248,14 +248,14 @@ document.querySelectorAll('img.lazyload')[0].src
 
 ### `storeEndpoint()`
 
-Using `storeEndpoint(url, name)` to request the endpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it.
+Using `storeEndpoint(url, name, isJSON, requiresProxy)` to request the endpoint and storing it with a unique name given along with the url. It requires the endpoint url, and the variable name you wish to give it. There is also the option to fetch either a JSON response by setting it to true or raw text if false. To get around the CORs error issue, setting it to true will prepend "https://cors-anywhere.herokuapp.com/" to the url string.
 
 This also stored the endpoint url as `nameEndpoint.src_url` so you can quickly associate where this endpoint was fetched from. This stored url remains outside of the fetched endpoint as well.
 
 *In the function, you will see this stored in the `window`. If you would like to have all data bundled together as one object, I would recommend adding in something like `window.siteData`.*
 
 ```js
-storeEndpoint(location.origin + location.pathname + '.json', 'product');
+storeEndpoint(location.origin + location.pathname + '.json', 'product', true, false);
 
 productEndpoint
 > {...}
