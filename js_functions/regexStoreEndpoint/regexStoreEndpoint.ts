@@ -1,11 +1,16 @@
-async function regexStoreEndpoint(url: string, name: string, regex: RegExp) {
+async function regexStoreEndpoint(url: string, name: string, regex: RegExp, isJSON: boolean, requiresProxy: boolean) {
     if (regex.test(location.href)) {
-        await fetch(url).then(resp => resp.json()).then(json => {
-            window[name + 'Endpoint'] = json;
-            window[name + 'Endpoint'].src_url = url;
-            console.log("regexStoreEndpoint(): url successfully matched " + regex + " & fetched " + name + "Endpoint");
-        }).catch(console.error);
+        isJSON = isJSON || false;
+
+        requiresProxy = requiresProxy || false;
+        requiresProxy ? url = 'https://cors-anywhere.herokuapp.com/' + url : url = url;
+
+        const resp = await fetch(url);
+        const e = isJSON ? await resp.json() : await resp.text();
+
+        window[name] = e;
+        window[name].src_url = url;
     } else {
-        return console.log("regexStoreEndpoint(): url did not match " + regex);
+        console.log("regexStoreEndpoint(): url did not match " + regex)
     }
 }
