@@ -297,3 +297,13 @@ This will highlight with neon green in the console. Or if you want a different c
 Because AMP restricts pages to a [75k CSS Budget](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/?format=websites#add-styles-to-a-page) you can check in the console how close you are in reaching this limit by evaluating the number of characters used in `style[amp-custom]` and any inline styles. Depending on how much is used, it will highlight in green (<= 50%), yellow (<= 75%), or red (> 75%).
 
 ![highlightExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/ampCssBudget.png?raw=true)
+
+## Observers
+
+### `watchThis()`
+
+`watchThis(target, time)` time: 1000ms default
+
+Don't you hate watching an element changes on you and you're struggling where to place that debugger? Use this simple Mutation Observer that pauses as soon as the change was made - which will help narrow things down.
+
+![watchThisExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/watchThis.png?raw=true)

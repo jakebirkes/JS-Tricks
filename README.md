@@ -93,3 +93,8 @@ Here is a [list of functions](js_functions/js_functions.md) that are contained i
 - [`ampCSSBudget`](js_functions/js_functions.md#ampcssbudget)
 
   - to stay on top of CSS while building in [AMP⚡](https://amp.dev/)
+
+### Observers
+
+- [`watchThis`](js_functions/js_functions.md#watchthis)
+  - target an element to auto-trigger a debugger
