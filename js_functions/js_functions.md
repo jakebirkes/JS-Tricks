@@ -304,6 +304,6 @@ Because AMP restricts pages to a [75k CSS Budget](https://amp.dev/documentation/
 
 `watchThis(target, time)` time: 1000ms default
 
-Don't you hate watching an element changes on you and you're struggling where to place that debugger? Use this simple Mutation Observer that pauses as soon as the change was made - which will help narrow things down.
+Don't you hate when an element changes on you and you're struggling where to place that debugger? Use this simple Mutation Observer that pauses as soon as the change was made - which will help narrow things down.
 
 ![watchThisExample](https://raw.githubusercontent.com/jakewantulok/JS-Tricks/master/img/watchThis.png?raw=true)
