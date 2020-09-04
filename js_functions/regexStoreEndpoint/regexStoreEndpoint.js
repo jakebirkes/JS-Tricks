@@ -1,7 +1,5 @@
-async function regexStoreEndpoint(url, name, regex, isJSON, requiresProxy) {
+async function regexStoreEndpoint(url, name, regex, isJSON = false, requiresProxy = false) {
     if (regex.test(location.href)) {
-        isJSON = isJSON || false;
-        requiresProxy = requiresProxy || false;
         requiresProxy ? url = 'https://cors-anywhere.herokuapp.com/' + url : url = url;
         const resp = await fetch(url);
         const e = isJSON ? await resp.json() : await resp.text();
