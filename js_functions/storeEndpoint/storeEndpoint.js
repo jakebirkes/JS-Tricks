@@ -1,6 +1,4 @@
-async function storeEndpoint(url, name, isJSON, requiresProxy) {
-    isJSON = isJSON || false;
-    requiresProxy = requiresProxy || false;
+async function storeEndpoint(url, name, isJSON = false, requiresProxy = false) {
     requiresProxy ? url = 'https://cors-anywhere.herokuapp.com/' + url : url = url;
     const resp = await fetch(url);
     const e = isJSON ? await resp.json() : await resp.text();
